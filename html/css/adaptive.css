@@ -36,6 +36,11 @@
         padding-left: 100px;
     }
 
+    .main_event h1 {
+        font-size: 3.5rem;
+    }
+
+
 }
 
 
@@ -46,7 +51,7 @@
 
     /*==============  Main Event  ==============*/
     .main_event .content {
-        padding-right: 15rem;
+        padding-right: 25%;
     }
 
 
@@ -68,6 +73,10 @@
 
     .announse {
         padding-right: 50px;
+    }
+
+    .main_logo_container .container_mid{
+        padding-left: 250px;
     }
 
 
