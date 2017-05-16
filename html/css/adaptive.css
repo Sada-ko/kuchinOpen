@@ -71,8 +71,8 @@
         padding: 0.25rem 0;
     }
 
-    .announse {
-        padding-right: 50px;
+    .main_logo_container {
+        min-height: 85px;
     }
 
     .main_logo_container .container_mid.pr-5 {
@@ -80,13 +80,23 @@
         padding-right: 0 !important;
     }
 
+    .announse_wrapper {
+    font-size: 0.8em;
+}
+
+    .announse {
+    padding-right: 30px;
+    /*padding-top: 15px;*/
+}
+
+
 
     /*========== Logo ===========*/
     .logo {
-        height: 68px;
+        height: 58px;
         left: 0;
-        top: -17px;
-        width: 140px;
+        top: -15px;
+        width: 120px;
     }
 
 
@@ -94,6 +104,11 @@
     /*========= Slick =========*/
     .slick-next {
         right: 0;
+        top: 45px;
+    }
+
+    .slick-prev{
+        display: none !important;
     }
 
 
@@ -103,7 +118,7 @@
     .main_event .content {
         padding-left: 10px;
         padding-right: 0;
-        padding-top: 5rem;
+        padding-top: 2rem;
     }
 
     .main_event h1 {
