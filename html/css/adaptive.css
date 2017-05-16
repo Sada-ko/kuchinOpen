@@ -75,10 +75,26 @@
         padding-right: 50px;
     }
 
-    .main_logo_container .container_mid{
-        padding-left: 250px;
+    .main_logo_container .container_mid.pr-5 {
+        padding-left: 155px;
+        padding-right: 0 !important;
     }
 
+
+    /*========== Logo ===========*/
+    .logo {
+        height: 68px;
+        left: 0;
+        top: -17px;
+        width: 140px;
+    }
+
+
+
+    /*========= Slick =========*/
+    .slick-next {
+        right: 0;
+    }
 
 
 
@@ -86,7 +102,7 @@
 
     .main_event .content {
         padding-left: 10px;
-        padding-right: 2rem;
+        padding-right: 0;
         padding-top: 5rem;
     }
 

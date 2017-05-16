@@ -92,6 +92,7 @@ a:hover, .link:hover, a:hover .link{
 .service_block{
     position: absolute;
     right: 1rem;
+    top: 10px;
 }
 
 .container_mid{
