@@ -125,6 +125,65 @@ a:hover, .link:hover, a:hover .link{
 
 
 
+/*============  slick carousel  ===========*/
+.slick-next::after, .slick-next::before,
+.slick-prev::after, .slick-prev::before{
+    border-top: 1px solid white;
+    content: "" !important;
+    display: block;
+}
+
+.slick-next::after{
+    margin-top: 15px;
+}
+
+.slick-prev::after{
+    margin-top: 15px;
+}
+
+.slick-next::after,
+.slick-prev::before{
+    top: 24px;
+    transform: rotate(-55deg);
+}
+
+ .slick-next::before,
+ .slick-prev::after{
+    transform: rotate(55deg);
+}
+
+.slick-next, .slick-prev{
+}
+
+.slick-next {
+    right: 60px;
+    top: 55px;
+}
+
+.slick-prev {
+    top: 55px;
+}
+
+.slick-prev::before, .slick-next::before,
+.slick-prev::after, .slick-next::after {
+    color: white;
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0.75;
+}
+
+.slick-prev:hover:after, .slick-prev:focus:after, .slick-next:hover:after, .slick-next:focus:after {
+    opacity: 1;
+}
+
+.slick-prev.slick-disabled::before, .slick-next.slick-disabled::before,
+.slick-prev.slick-disabled::after, .slick-next.slick-disabled::after {
+    opacity: 0;
+}
+
+
+
 
 
 
@@ -136,20 +195,20 @@ a:hover, .link:hover, a:hover .link{
 .logo{
     background-image: url("../img/main_logo_color.png");
     background-size: contain;
-    height: 102px;
+    height: 97px;
     left: 10px;
     position: absolute;
     top: -11px;
-    width: 210px;
+    width: 200px;
 }
 
 .announse_wrapper {
-    overflow-x: auto;
+    /*overflow-x: auto;*/
 }
 
 .announse {
     padding-top: 20px;
-    width: 1300px;
+    /*width: 1300px;*/
 }
 
 /*==============  header  ==============*/

@@ -2,10 +2,20 @@
  * Created by Sada-Mac on 16/05/17.
  */
 
-$('.variable-width').slick({
-    dots: true,
+//Carousel
+$('.announse').slick({
+    //dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 1,
-    variableWidth: true
+    variableWidth: true,
+    swipeToSlide: true
+    //rtl: true
+    //adaptiveHeight: true,
+    //slidesToScroll: 4
+});
+
+//BG images
+$(document).ready(function () {
+    $('.fill-box').fillBox();
 });
