@@ -79,6 +79,10 @@ a:hover, .link:hover, a:hover .link{
     text-decoration: none;
 }
 
+.text-muted {
+    color: rgba(158, 166, 168, 1) !important;
+}
+
 .ghost_a a{
     color: rgba(158, 166, 168, 1);
     border-bottom-color: rgba(158, 166, 168, .5);
@@ -303,6 +307,8 @@ a:hover, .link:hover, a:hover .link{
 .main_news {
     padding-right: 400px;
 }
+
+
 /*========= Новости =========*/
 
 
