@@ -5,8 +5,8 @@
         padding: 0 1rem;
     }
 
-    .announse{
-        padding-right: 100px;
+    .announse {
+        padding-right: 60px;
     }
 
 
@@ -16,6 +16,10 @@
         padding-right: 5rem;
     }
 
+    /*slick*/
+    .slick-next {
+        right: 10px;
+    }
 
 
 
@@ -75,8 +79,8 @@
         min-height: 85px;
     }
 
-    .main_logo_container .container_mid.pr-5 {
-        padding-left: 155px;
+    .main_logo_container .container_mid {
+        padding-left: 140px;
         padding-right: 0 !important;
     }
 

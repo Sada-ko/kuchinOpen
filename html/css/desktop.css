@@ -93,12 +93,18 @@ a:hover, .link:hover, a:hover .link{
     position: absolute;
     right: 1rem;
     top: 10px;
+    display: none;
 }
 
 .container_mid{
     padding-left: 250px;
     position: relative;
     width: 100%;
+}
+
+.container_wid {
+    padding-left: 80px;
+    position: relative;
 }
 
 .inverted{
@@ -181,6 +187,10 @@ a:hover, .link:hover, a:hover .link{
 .slick-prev.slick-disabled::before, .slick-next.slick-disabled::before,
 .slick-prev.slick-disabled::after, .slick-next.slick-disabled::after {
     opacity: 0;
+}
+
+.slick-slider {
+    margin-bottom: 0;
 }
 
 
@@ -280,6 +290,20 @@ a:hover, .link:hover, a:hover .link{
 
 
 
+
+/*========= Новости =========*/
+.main_news h2{
+    text-transform: uppercase;
+}
+
+.news_item .comment i{
+    font-size: 1.4em;
+}
+
+.main_news {
+    padding-right: 400px;
+}
+/*========= Новости =========*/
 
 
 
