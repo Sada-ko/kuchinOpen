@@ -197,15 +197,11 @@ button, .btn {
 }
 
 .slick-next, .slick-prev{
+    top: 50%;
 }
 
 .slick-next {
     right: 60px;
-    top: 55px;
-}
-
-.slick-prev {
-    top: 55px;
 }
 
 .slick-prev::before, .slick-next::before,
@@ -285,11 +281,9 @@ button, .btn {
 
 .image_toning{
     position: absolute;
-    /*width: 100%;*/
-    /*height: 100%;*/
     opacity: .3;
-    margin-left: -1rem;
     z-index: 2;
+    left: 0;
 }
 
 .image_toning:after{
@@ -299,7 +293,6 @@ button, .btn {
     width: 100%;
     height: 100%;
     opacity: .3;
-    margin-left: -1rem;
     z-index: 2;
 }
 
@@ -344,11 +337,14 @@ button, .btn {
 .main_news > .row {
     margin: 0;
 }
+/*========= News =========*/
 
 
-
-
-/*========= Новости =========*/
+/*========  Лучшие игроки  ========*/
+.best-players .photo {
+    height: 150px;
+}
+/*========  Лучшие игроки  ========*/
 
 
 

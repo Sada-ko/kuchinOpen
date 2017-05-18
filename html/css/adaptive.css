@@ -16,6 +16,13 @@
         padding-right: 5rem;
     }
 
+    .main_event .container_mid {
+        padding-left: 80px;
+    }
+
+
+
+
     /*slick*/
     .slick-next {
         right: 10px;
@@ -41,10 +48,6 @@
 
 
     /*==============  Main Event  ==============*/
-    .main_event .content {
-        padding-left: 100px;
-    }
-
     .main_event h1 {
         font-size: 3.5rem;
     }
@@ -72,7 +75,8 @@
 
 @media (max-width: 767px) {
 
-    .container_mid{
+    .container_mid,
+    .container_wid {
         padding-left: 0;
     }
 
@@ -89,9 +93,6 @@
         padding-right: 0 !important;
     }
 
-    .container_wid {
-        padding-left: 0;
-    }
 
     .announse_wrapper {
      font-size: 0.8em;
@@ -102,12 +103,18 @@
         /*padding-top: 15px;*/
     }
 
+    .content {
+        /*padding-left: 10px;*/
+        padding-right: 0;
+    }
+
+
 
 
     /*========== Logo ===========*/
     .logo {
         height: 58px;
-        left: 0;
+        left: 0.5rem;
         top: -15px;
         width: 120px;
     }
@@ -117,7 +124,6 @@
     /*========= Slick =========*/
     .slick-next {
         right: 0;
-        top: 45px;
     }
 
     .slick-prev{
@@ -129,8 +135,6 @@
     /*==============  Main Event  ==============*/
 
     .main_event .content {
-        padding-left: 10px;
-        padding-right: 0;
         padding-top: 2rem;
     }
 
@@ -146,8 +150,9 @@
 
 
     /*============  News  ============*/
-    .main_news .advert_container{
+    .news_container{
         /*padding-left: 0;*/
+        padding-bottom: 3rem;
     }
 
 
