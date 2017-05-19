@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,400i,700&subset=cyrillic');
 
+
+@font-face {
+    font-family: 'sports-webfont';
+    src: url('fonts/sports-webfont.eot');
+    src: url('fonts/sports-webfont.eot') format('embedded-opentype'), url('fonts/sports-webfont.woff') format('woff'), url('fonts/sports-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sports-font{
+    font-family: 'sports-webfont';
+    display: inline-block;
+    font-feature-settings: normal;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.3em;
+    text-rendering: auto;
+}
+
+
+
 html {
     position: relative;
     min-height: 100%;
@@ -122,6 +144,10 @@ a:hover, .link:hover, a:hover .link{
     border-bottom-color: rgba(197, 0, 42, .5);
 }
 
+.inverted .text-muted {
+    color: rgba(255, 255, 255, .5);
+}
+
 .all_sports_gradient{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5002a+0,690166+100 */
     background: #c5002a; /* Old browsers */
@@ -164,6 +190,45 @@ button, .btn {
 .btn-block {
     max-width: 768px;
 }
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+
+
+/*======= Мячики =======*/
+.volleyball::before{
+    content: "\f2e2";
+}
+
+.beach-volleyball::before{
+    content: "\f2e3";
+}
+
+.soccer::before{
+    content: "\f2e5";
+}
+
+.basketball::before{
+    content: "\f2e4";
+}
+
+
+
+/*======= Tables =======*/
+.table.table-clean th, .table.table-clean td {
+    border-top: none;
+}
+
+.table.table-clean thead th {
+    border-bottom-width: 1px;
+}
+/*======= Tables =======*/
 
 
 
@@ -303,7 +368,7 @@ button, .btn {
     background-image: url("../img/main_logo_color.png");
     background-size: contain;
     height: 97px;
-    left: 10px;
+    left: 1.5rem;
     position: absolute;
     top: -11px;
     width: 200px;
@@ -406,6 +471,10 @@ button, .btn {
 /*========  Лучшие игроки  ========*/
 .best-players .photo {
     height: 150px;
+}
+
+.best-player_item span.sports-font{
+    /*left: -1.2em;*/
 }
 /*========  Лучшие игроки  ========*/
 
