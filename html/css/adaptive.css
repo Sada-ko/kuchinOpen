@@ -9,6 +9,9 @@
         padding-right: 60px;
     }
 
+    nav .container_mid {
+        padding-left: 80px;
+    }
 
     /*==============  Main Event  ==============*/
     .main_event .content {

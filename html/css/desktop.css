@@ -300,7 +300,7 @@ button, .btn {
 }
 
 .owl-next {
-    right: -10px;
+    right: 0;
 }
 
 .owl-prev, .owl-next{
