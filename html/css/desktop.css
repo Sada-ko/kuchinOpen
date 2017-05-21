@@ -11,18 +11,26 @@
 
 .sports-font{
     font-family: 'sports-webfont';
+    font-size: 1.3em;
+    line-height: 1.3em;
     display: inline-block;
     font-feature-settings: normal;
-    font-size: 1.3em;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size-adjust: none;
+    font-stretch: normal;
     font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
     font-weight: normal;
-    line-height: 1.3em;
     text-rendering: auto;
 }
 
 
 
 html {
+    -moz-osx-font-smoothing: grayscale !important;
+    -webkit-font-smoothing: antialiased !important;
     position: relative;
     min-height: 100%;
 }
@@ -189,6 +197,26 @@ button, .btn {
 
 .btn-block {
     max-width: 768px;
+}
+
+.btn.inverted {
+    background-color: transparent;
+    border-color: white;
+}
+
+.btn.inverted:hover {
+    color: rgba(197, 0, 42, 1);
+    border-color: rgba(197, 0, 42, 1);
+}
+
+.btn.inverted div::before,
+.btn.inverted div::after{
+    transition: .2s;
+}
+
+.btn.inverted:hover div::before,
+.btn.inverted:hover div::after{
+    border-color: rgba(197, 0, 42, 1);
 }
 
 .position-relative{
@@ -479,7 +507,16 @@ button, .btn {
 /*========  Лучшие игроки  ========*/
 
 
+/*=======  Партнёры и спонсоры  =======*/
+.partners_logo_list a{
+    max-height: 150px;
+    max-width: 200px;
+}
 
+.partners_logo_list div img{
+    width: 100%;
+}
+/*=======  Партнёры и спонсоры  =======*/
 
 
 
