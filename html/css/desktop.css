@@ -256,6 +256,10 @@ button, .btn {
 .table.table-clean thead th {
     border-bottom-width: 1px;
 }
+
+.d-table-row{
+    display: table-row;
+}
 /*======= Tables =======*/
 
 

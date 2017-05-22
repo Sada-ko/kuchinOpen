@@ -9,9 +9,6 @@
         padding-right: 60px;
     }
 
-    nav .container_mid {
-        padding-left: 80px;
-    }
 
     /*==============  Main Event  ==============*/
     .main_event .content {
@@ -19,9 +16,6 @@
         padding-right: 5rem;
     }
 
-    .main_event .container_mid {
-        padding-left: 80px;
-    }
 
 
 
@@ -49,11 +43,19 @@
 /*------------------------       Medium devices (tablets, less than 992px)    ------------------------*/
 @media (max-width: 991px) {
 
+    nav .container_mid {
+        padding-left: 80px;
+    }
 
     /*==============  Main Event  ==============*/
     .main_event h1 {
         font-size: 3.5rem;
     }
+
+    .main_event .container_mid {
+        padding-left: 80px;
+    }
+
 
 
 }
@@ -162,6 +164,10 @@
 
     .main_event .match_result .count{
         font-size: 3.5em;
+    }
+
+    .main_event .container_mid {
+        padding-left: 0;
     }
 
 
