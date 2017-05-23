@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         //margin:10,
         nav: true,
-        navText: ["<a class='w-100 h-100 d-block border-0'></a>","<a class='w-100 h-100 d-block border-0'></a>"],
+        navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"],
         autoWidth:true
         //items:4
     });

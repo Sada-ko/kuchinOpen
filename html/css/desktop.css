@@ -91,9 +91,33 @@ h1, h2{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h2, h3, h4, h5, h6,
-.h2, .h3, .h4, .h5, .h6 {
+h1 .cond-caps,
+.h1 .cond-caps{
+    letter-spacing: 0.05em;
+}
+
+h3, h4, h5, h6,
+.h3, .h4, .h5, .h6 {
     line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.7rem;
+}
+
+h2, .h2 {
+    font-size: 2.5rem;
+}
+
+h3, .h3 {
+    font-size: 1.45rem;
+    font-weight: bold;
+}
+
+h4, .h4 {
+    font-size: 1.15rem;
+    font-weight: bold;
 }
 
 a, .link, a .link{
@@ -188,11 +212,6 @@ button, .btn {
     text-transform: uppercase;
 }
 
-h1 .cond-caps,
-.h1 .cond-caps{
-    letter-spacing: 0.05em;
-}
-
 .btn-secondary-main{
     background-color: rgba(158, 166, 168, 1);
     border-color: rgba(158, 166, 168, 1);
@@ -237,6 +256,14 @@ h1 .cond-caps,
 
 .content img{
     max-width: 100%;
+}
+
+.form_container {
+    width: 70%;
+}
+
+.compact-form-container{
+    /*max-width: 768px;*/
 }
 
 
@@ -397,6 +424,10 @@ h1 .cond-caps,
 .owl-next a::after {
     transform: rotate(30deg);
 }
+
+.owl-carousel .owl-item img {
+    width: auto;
+}
 /*========== Owl Carousel ==========*/
 
 
@@ -499,9 +530,9 @@ h1 .cond-caps,
 
 
 /*========= News =========*/
-.main_news h2{
-    text-transform: uppercase;
-}
+/*.main_news h2{*/
+    /*text-transform: uppercase;*/
+/*}*/
 
 .news_item .comment i{
     font-size: 1.4em;
