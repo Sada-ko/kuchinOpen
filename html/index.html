@@ -40,17 +40,16 @@
     <div class="collapse navbar-collapse container_mid cond-caps" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link border-0 active px-4" href="#">События<span class="sr-only">(current)
-                </span></a>
+                <a class="nav-link border-0 px-3" href="#">События</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link border-0 px-4" href="#">Фото и видео</a>
+                <a class="nav-link border-0 px-3" href="#">Фото и видео</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link border-0 px-4" href="#">команды</a>
+                <a class="nav-link border-0 px-3" href="#">команды</a>
             </li>
-            <li class="nav-item dropdown px-4">
-                <a class="nav-link dropdown-toggle border-0" href="http://example.com/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Документы</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle border-0 px-3" href="http://example.com/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Документы</a>
 
                 <!--Выпадающее меню на всякий случай-->
                 <!--<div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -390,10 +389,10 @@
 
             </div>
 
-            <button type="button" class="btn btn-primary btn-lg btn-block btn-secondary-main rounded-0 cond-caps">
+            <a href="news_list.html" class="btn btn-primary btn-lg btn-block btn-secondary-main rounded-0 cond-caps">
                 Все новости
                 <div class="slick-next ml-3"></div>
-            </button>
+            </a>
 
         </div>
 
@@ -408,12 +407,12 @@
 
 <!--=============   Лучшие игроки сезона   =============-->
 <div class="all_sports_gradient best-players-carousel inverted py-4 px-4 pt-3">
-    <div class="container_wid content">
+    <div class="container_wid mb-3 pt-2">
         <h2 class="cond-caps">Лучшие игроки сезона</h2>
     </div>
 
-    <div class="content px-md-4">
-        <div class="owl-carousel best-players pr-5">
+    <div class="px-md-4 mb-2">
+        <div class="owl-carousel best-players pr-5 mb-4">
 
             <div class="d-inline-block best-player_item mr-4 mr-md-5">
                 <div class="cond-caps mb-2">
@@ -513,17 +512,17 @@
 <div class="best-players-carousel inverted py-4 px-4 pt-3">
 
     <!--бэкграунд-->
-    <img class="fill-box" src="img/dark_logo_bg.jpg" />
+    <img class="fill-box" src="img/dark_logo_bg.jpg"/>
     <!--бэкграунд-->
 
-    <div class="container_wid content">
+    <div class="container_wid mb-3 pt-2">
         <h2 class="cond-caps">Требуются игроки</h2>
     </div>
 
-    <div class="content px-md-4">
+    <!--todo переделать таблицу-->
+    <!--<div class="px-md-4">
 
-        <!--todo переделать таблицу-->
-        <!--<div class="d-table">
+        <div class="d-table">
 
             <div class="row">
                 <div class="d-table-cell px-3 ">
@@ -555,60 +554,65 @@
                 </div>
             </div>
 
-        </div>-->
+        </div>
 
-    </div>
+    </div>-->
 
-    <div class="content px-md-4">
-        <table class="table table-clean table-responsive">
-            <thead class="">
-            <tr class="small">
-                <th></th>
-                <th>Команда</th>
-                <th>Лига и&nbsp;группа</th>
-                <th>Комментарий</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">
-                    <span class="sports-font soccer"></span>
-                </th>
-                <td><a href="#">ANIMALS</a></td>
-                <td>Лига Медиум-Юг<br/>Группа 1</td>
-                <td>Будем рады усилить позицию центрального блокирующего. Тренировки с&nbsp;тренером.</td>
-            </tr>
-            <tr>
-                <th scope="row">
-                    <span class="sports-font volleyball"></span>
-                </th>
-                <td><a href="#">Baltic Star V</a></td>
-                <td>Женская лига В<br/>В1</td>
-                <td>Тренировки с&nbsp;тренером, Север, Центр. Ищем игроков нападения, имеющих желание и&nbsp;возможность два-три раза в&nbsp;неделю посвящать вечера волейболу. За&nbsp;подробностями обращайтесь: <a href="#">https://vk. com/id17420293</a></td>
-            </tr>
-            <tr>
-                <th scope="row">
-                    <span class="sports-font beach-volleyball"></span>
-                </th>
-                <td><a href="#">Fishburg</a></td>
-                <td>Лига Медиум-Юг<br/>Группа 2</td>
-                <td>Готовы к&nbsp;усилению по&nbsp;всем позициям. Местоположение&nbsp;&mdash; Рыбацкое.</td>
-            </tr>
-            <tr>
-                <th scope="row">
-                    <span class="sports-font basketball"></span>
-                </th>
-                <td><a href="#">Baltic Star V</a></td>
-                <td>Женская лига В<br/>В1</td>
-                <td>Тренировки с&nbsp;тренером, Север, Центр. Ищем игроков нападения, имеющих желание и&nbsp;возможность два-три раза в&nbsp;неделю посвящать вечера волейболу. За&nbsp;подробностями обращайтесь: <a href="#">https://vk. com/id17420293</a></td>
-            </tr>
-            </tbody>
-        </table>
+    <!--Обёртка для отступа справа-->
+    <div class="row">
 
-        <button type="button" class="btn btn-primary btn-lg btn-block inverted rounded-0 cond-caps">
-            Все вакансии
-            <div class="slick-next ml-3"></div>
-        </button>
+        <div class="col-sm-12 col-xl-9 px-md-4">
+            <table class="table table-clean table-responsive mb-4">
+                <thead class="">
+                <tr class="small">
+                    <th></th>
+                    <th style="min-width: 140px">Команда</th>
+                    <th style="min-width: 180px">Лига и&nbsp;группа</th>
+                    <th style="min-width: 350px">Комментарий</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        <span class="sports-font soccer"></span>
+                    </th>
+                    <td><a href="#">ANIMALS</a></td>
+                    <td>Лига Медиум-Юг<br/>Группа 1</td>
+                    <td>Будем рады усилить позицию центрального блокирующего. Тренировки с&nbsp;тренером.</td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <span class="sports-font volleyball"></span>
+                    </th>
+                    <td><a href="#">Baltic Star V</a></td>
+                    <td>Женская лига В<br/>В1</td>
+                    <td>Тренировки с&nbsp;тренером, Север, Центр. Ищем игроков нападения, имеющих желание и&nbsp;возможность два-три раза в&nbsp;неделю посвящать вечера волейболу. За&nbsp;подробностями обращайтесь: <a href="#">https://vk. com/id17420293</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <span class="sports-font beach-volleyball"></span>
+                    </th>
+                    <td><a href="#">Fishburg</a></td>
+                    <td>Лига Медиум-Юг<br/>Группа 2</td>
+                    <td>Готовы к&nbsp;усилению по&nbsp;всем позициям. Местоположение&nbsp;&mdash; Рыбацкое.</td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <span class="sports-font basketball"></span>
+                    </th>
+                    <td><a href="#">Baltic Star V</a></td>
+                    <td>Женская лига В<br/>В1</td>
+                    <td>Тренировки с&nbsp;тренером, Север, Центр. Ищем игроков нападения, имеющих желание и&nbsp;возможность два-три раза в&nbsp;неделю посвящать вечера волейболу. За&nbsp;подробностями обращайтесь: <a href="#">https://vk. com/id17420293</a></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block inverted rounded-0 cond-caps mb-4">
+                Все вакансии
+                <div class="slick-next ml-3"></div>
+            </button>
+
+        </div>
 
     </div>
 
@@ -617,11 +621,11 @@
 <!--=============   Спонсоры   =============-->
 <div class="best-players-carousel py-4 px-4 pt-3">
 
-    <div class="container_wid content">
+    <div class="container_wid pt-3">
         <h2 class="cond-caps">Партнёры и спонсоры</h2>
     </div>
 
-    <div class="partners_logo_list content px-md-4 py-4">
+    <div class="partners_logo_list px-md-4 py-4">
         <!--<div class="d-flex align-items-center">-->
 
             <a href="#" class="border-0 d-inline-block mr-4 mb-5">
@@ -658,7 +662,7 @@
 </div>
 
 <!--=============   Подвал   =============-->
-<footer class="footer px-md-5 px-4">
+<footer class="footer px-md-5 px-4 pt-4">
     <!--<div class=""></div>-->
     <div class="container_mid d-md-inline-flex align-items-start">
 
