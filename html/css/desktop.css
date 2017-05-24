@@ -543,10 +543,6 @@ button, .btn {
 .news_item .comment i{
     font-size: 1.4em;
 }
-
-.main_news > .row {
-    margin: 0;
-}
 /*========= News =========*/
 
 
@@ -567,6 +563,21 @@ button, .btn {
     width: 100%;
 }
 /*=======  Партнёры и спонсоры  =======*/
+
+
+
+
+
+/*========== События ==========*/
+.event-item a{
+    border: 3px solid #ffffff;
+    transition: .2s;
+}
+
+.event-item a:hover{
+    border-color: rgba(37, 37, 37, 1);
+}
+/*========== События ==========*/
 
 
 
