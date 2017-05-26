@@ -672,7 +672,7 @@ button, .btn {
 
 .event-item{
     position: relative;
-    max-width: 50%;
+    /*max-width: 50%;*/
 }
 
 .event_short_gallery_wrapper{
