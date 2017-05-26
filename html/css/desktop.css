@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,400i,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|PT+Sans:400,400i,700&subset=cyrillic');
 
 
 @font-face {
@@ -38,7 +38,8 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 200px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.1em;
 }
 
 
@@ -510,6 +511,12 @@ button, .btn {
     z-index: 2;
 }
 
+.main_event{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 .main_event .content{
     z-index: 3;
 }
@@ -524,6 +531,24 @@ button, .btn {
     font-size: 5em;
 }
 
+.main_news .advert_container{
+    padding-top: 1rem;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.main_news .news_container{
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 0;
+}
+
+.main_news{
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
 /*.match_result.duel > div:first-child::after{*/
     /*content: ":";*/
     /*font-family: 'Open Sans Condensed', sans-serif;*/
@@ -535,13 +560,64 @@ button, .btn {
 
 
 
-/*========= News =========*/
-/*.main_news h2{*/
-    /*text-transform: uppercase;*/
-/*}*/
 
+
+/*====== Best Players Main ======*/
+.best-players-carousel{
+    padding: 1.5rem;
+}
+/*====== Best Players Main ======*/
+
+
+
+
+
+/*======== Vacancies ========*/
+.vacancies_main_preview{
+    padding: 1.5rem;
+}
+/*======== Vacancies ========*/
+
+
+
+ /*========== Sponsors ==========*/
+.sponsors{
+    padding: 1.5rem;
+}
+ /*========== Sponsors ==========*/
+
+
+
+
+/*========= News =========*/
 .news_item .comment i{
     font-size: 1.4em;
+}
+
+.global_new_item{
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.global_news .news_item .date{
+    margin-bottom: 0.25rem;
+}
+
+.global_news .news_item{
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.global_new_item .advert_container,
+.global_news .advert_container{
+    padding-top: 1rem;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.global_new_item .content{
+    padding-top: 1.5rem;
 }
 /*========= News =========*/
 
@@ -590,10 +666,6 @@ button, .btn {
     border-color: rgba(37, 37, 37, 1);
 }
 
-/*.event-item a:hover .status{
-    color: white !important;
-}*/
-
 .event-item a:hover .bg{
     /*opacity: 1;*/
 }
@@ -603,7 +675,21 @@ button, .btn {
     max-width: 50%;
 }
 
+.event_short_gallery_wrapper{
+    position: relative;
+}
+
+.details{
+    /*position: absolute;*/
+    /*z-index: 2;*/
+    /*bottom: 20px;*/
+    margin-bottom: 2rem;
+}
+
 .event_short_gallery{
+    /*padding-top: 1rem;*/
+    margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 .event_short_gallery .gallery_item{
@@ -625,7 +711,23 @@ button, .btn {
 .event_short_gallery .owl-prev, .owl-next {
     top: 45%;
 }
-    /*========== События ==========*/
+
+.global_event{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.global_event .data{
+    margin-bottom: .5rem;
+}
+
+.global_event .row .data{
+
+}
+
+
+/*========== События ==========*/
 
 
 
