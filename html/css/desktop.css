@@ -461,6 +461,10 @@ button, .btn {
     height: 80px;
 }
 
+.announse_point {
+    height: 100%;
+}
+
 .announse {
     height: 80px;
     /*padding-top: 20px;*/
