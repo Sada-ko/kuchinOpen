@@ -443,7 +443,7 @@ button, .btn {
 
 /*==============  header  ==============*/
 .main_logo_container{
-    min-height: 130px;
+    height: 130px;
 }
 
 .logo{
