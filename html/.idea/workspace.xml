@@ -76,20 +76,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="desktop.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="desktop.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/desktop.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6375" max-vertical-offset="11700">
-              <caret line="445" column="4" selection-start-line="445" selection-start-column="4" selection-end-line="445" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.81673306" vertical-offset="6375" max-vertical-offset="11715">
+              <caret line="465" column="4" selection-start-line="465" selection-start-column="4" selection-end-line="465" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adaptive.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adaptive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/adaptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57768923" vertical-offset="675" max-vertical-offset="3105">
+            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="3105">
               <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
               <folding>
                 <element signature="e#102#599#0" expanded="false" />
@@ -160,8 +160,8 @@
         <option value="$PROJECT_DIR$/event_past.html" />
         <option value="$PROJECT_DIR$/event_future.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/desktop.css" />
         <option value="$PROJECT_DIR$/css/adaptive.css" />
+        <option value="$PROJECT_DIR$/css/desktop.css" />
       </list>
     </option>
   </component>
@@ -962,21 +962,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/desktop.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6375" max-vertical-offset="11700">
-          <caret line="445" column="4" selection-start-line="445" selection-start-column="4" selection-end-line="445" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/adaptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57768923" vertical-offset="675" max-vertical-offset="3105">
+        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="3105">
           <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
           <folding>
             <element signature="e#102#599#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/desktop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81673306" vertical-offset="6375" max-vertical-offset="11715">
+          <caret line="465" column="4" selection-start-line="465" selection-start-column="4" selection-end-line="465" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

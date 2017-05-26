@@ -458,10 +458,11 @@ button, .btn {
 
 .announse_wrapper {
     /*overflow-x: auto;*/
-    max-height: 80px;
+    height: 80px;
 }
 
 .announse {
+    /*height: 80px;*/
     /*padding-top: 20px;*/
     /*width: 1300px;*/
 }
