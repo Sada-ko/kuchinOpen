@@ -373,7 +373,7 @@ button, .btn {
 
 /*========== Owl Carousel ==========*/
 .owl-prev {
-    left: -35px;
+    left: -20px;
 }
 
 .owl-next {
@@ -572,12 +572,65 @@ button, .btn {
 .event-item a{
     border: 3px solid #ffffff;
     transition: .2s;
+    position: relative;
+}
+
+.event-item .bg{
+    position: absolute;
+    filter: brightness(80%);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .2s;
 }
 
 .event-item a:hover{
+    /*color: white;*/
     border-color: rgba(37, 37, 37, 1);
 }
-/*========== События ==========*/
+
+/*.event-item a:hover .status{
+    color: white !important;
+}*/
+
+.event-item a:hover .bg{
+    /*opacity: 1;*/
+}
+
+.event-item{
+    position: relative;
+    max-width: 50%;
+}
+
+.event_short_gallery{
+}
+
+.event_short_gallery .gallery_item{
+    height:400px;
+}
+
+.event_short_gallery .gallery_item img{
+    height: 100%;
+}
+
+.event_short_gallery .owl-prev {
+    left: 10px;
+}
+
+.event_short_gallery .owl-next {
+    right: 10px;
+}
+
+.event_short_gallery .owl-prev, .owl-next {
+    top: 45%;
+}
+    /*========== События ==========*/
+
+
+
+
+
 
 
 

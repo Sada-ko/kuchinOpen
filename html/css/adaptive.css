@@ -47,6 +47,10 @@
         padding-left: 80px;
     }
 
+    h2, .h2 {
+        font-size: 1.8rem;
+    }
+
     /*==============  Main Event  ==============*/
     .main_event h1 {
         font-size: 3.5rem;
@@ -198,6 +202,13 @@
 
     .best-player_item span.sports-font{
         position: relative;
+    }
+
+
+    /*======= События =======*/
+
+    .event_short_gallery .gallery_item{
+        height:200px;
     }
 
 
