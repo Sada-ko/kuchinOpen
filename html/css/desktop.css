@@ -458,7 +458,7 @@ button, .btn {
 
 .announse_wrapper {
     overflow-y: hidden;
-    height: 80px;
+    /*height: 80px;*/
 }
 
 .announse_point {
