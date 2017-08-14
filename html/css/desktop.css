@@ -157,8 +157,7 @@ a:hover, .link:hover, a:hover .link{
 .service_block{
     position: absolute;
     right: 1rem;
-    top: 10px;
-    display: none;
+    top: 7px;
 }
 
 .container_mid{
@@ -738,6 +737,17 @@ button, .btn {
 
 
 
+/*Базовая страница*/
+
+.global_base{
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.global_base .content{
+    padding-top: 1.5rem;
+}
 
 
 

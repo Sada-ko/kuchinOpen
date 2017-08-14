@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|PT+Sans:400,400i,700&subset=cyrillic');
+
+
+@font-face {
+    font-family: 'sports-webfont';
+    src: url('fonts/sports-webfont.eot');
+    src: url('fonts/sports-webfont.eot') format('embedded-opentype'), url('fonts/sports-webfont.woff') format('woff'), url('fonts/sports-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sports-font{
+    font-family: 'sports-webfont';
+    font-size: 1.3em;
+    line-height: 1.3em;
+    display: inline-block;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: normal;
+    text-rendering: auto;
+}
+
+
+
+html {
+    -moz-osx-font-smoothing: grayscale !important;
+    -webkit-font-smoothing: antialiased !important;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 200px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+
+/*------------------------------    Общие стили     -----------------------------*/
+
+
+/*========= navbar =========*/
+
+.navbar-nav{
+    font-size: 20px;
+    margin-left: -1rem;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(37, 37, 37, 1);
+}
+
+.navbar-light .navbar-nav .open > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-light .navbar-nav .nav-link.open:hover,
+.navbar-light .navbar-nav .nav-link.active:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.show > .nav-pills .nav-link {
+    background-color: transparent;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link,
+.show > .nav-pills .active .nav-link{
+    background-color: rgba(37, 37, 37, 1);
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+color: rgba(255, 255, 255, 1);
+background-color: rgba(37, 37, 37, 1);
+}
+/*========= navbar =========*/
+
+
+
+h1, h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 .cond-caps,
+.h1 .cond-caps{
+    letter-spacing: 0.05em;
+}
+
+h3, h4, h5, h6,
+.h3, .h4, .h5, .h6 {
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.7rem;
+}
+
+h2, .h2 {
+    font-size: 2.5rem;
+}
+
+.content h2,
+.content .h2 {
+    margin-bottom: 1.2rem;
+    margin-top: 1.8rem;
+}
+
+h3, .h3 {
+    font-size: 1.45rem;
+    font-weight: bold;
+}
+
+h4, .h4 {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+a, .link, a .link{
+    transition: .2s;
+    color: rgba(37, 37, 37, 1);
+    border-bottom: 1px solid rgba(37, 37, 37, .5);
+    text-decoration: none;
+}
+
+a:hover, .link:hover, a:hover .link{
+    color: rgba(197, 0, 42, 1);
+    border-bottom-color: rgba(197, 0, 42, .5);
+    text-decoration: none;
+}
+
+.text-muted {
+    color: rgba(158, 166, 168, 1) !important;
+}
+
+.ghost_a a{
+    color: rgba(158, 166, 168, 1);
+    border-bottom-color: rgba(158, 166, 168, .5);
+}
+
+.ghost_a a:hover{
+    color: rgba(197, 0, 42, 1);
+    border-bottom-color: rgba(197, 0, 42, .5);
+}
+
+.service_block{
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 5px;
+}
+
+.container_mid{
+    padding-left: 250px;
+    position: relative;
+    width: 100%;
+}
+
+.container_wid {
+    padding-left: 80px;
+    position: relative;
+}
+
+.inverted{
+    color: white;
+}
+
+.inverted a, .inverted .link, .inverted a .link{
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.inverted a:hover, .inverted .link:hover, .inverted a:hover .link{
+    color: rgba(197, 0, 42, 1);
+    border-bottom-color: rgba(197, 0, 42, .5);
+}
+
+.inverted .text-muted {
+    color: rgba(255, 255, 255, .5);
+}
+
+.all_sports_gradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5002a+0,690166+100 */
+    background: #c5002a; /* Old browsers */
+    background: -moz-linear-gradient(left, #c5002a 0%, #690166 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #c5002a 0%,#690166 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #c5002a 0%,#690166 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5002a', endColorstr='#690166',GradientType=1 ); /* IE6-9 */
+}
+
+.dummy{
+    background-color: gray;
+}
+
+button, .btn {
+    cursor: pointer;
+    position: relative;
+}
+
+.btn .slick-next {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.cond-caps{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-secondary-main{
+    background-color: rgba(158, 166, 168, 1);
+    border-color: rgba(158, 166, 168, 1);
+}
+
+.btn-secondary-main:hover{
+    background-color: rgba(105, 110, 111, 1);
+    border-color: rgba(105, 110, 111, 1);
+}
+
+.btn-block {
+    max-width: 768px;
+}
+
+.btn.inverted {
+    background-color: transparent;
+    border-color: white;
+}
+
+.btn.inverted:hover {
+    color: rgba(197, 0, 42, 1);
+    border-color: rgba(197, 0, 42, 1);
+}
+
+.btn.inverted div::before,
+.btn.inverted div::after{
+    transition: .2s;
+}
+
+.btn.inverted:hover div::before,
+.btn.inverted:hover div::after{
+    border-color: rgba(197, 0, 42, 1);
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.content img{
+    max-width: 100%;
+}
+
+.form_container {
+    width: 70%;
+}
+
+.compact-form-container{
+    /*max-width: 768px;*/
+}
+
+
+
+/*======= Мячики =======*/
+.volleyball::before{
+    content: "\f2e2";
+}
+
+.beach-volleyball::before{
+    content: "\f2e3";
+}
+
+.soccer::before{
+    content: "\f2e5";
+}
+
+.basketball::before{
+    content: "\f2e4";
+}
+
+
+
+/*======= Tables =======*/
+.table.table-clean th, .table.table-clean td {
+    border-top: none;
+}
+
+.table.table-clean thead th {
+    border-bottom-width: 1px;
+}
+
+.d-table-row{
+    display: table-row;
+}
+/*======= Tables =======*/
+
+
+
+/*============  slick carousel  ===========*/
+.slick-prev, .slick-next {
+    width: 17px;
+}
+
+.slick-next::after, .slick-next::before,
+.slick-prev::after, .slick-prev::before{
+    border-top: 1px solid white;
+    content: "" !important;
+    display: block;
+}
+
+.slick-prev::after,
+.slick-next::after{
+    margin-top: 13px;
+}
+
+
+.slick-next::after,
+.slick-prev::before{
+    top: 24px;
+    transform: rotate(-55deg);
+}
+
+.slick-next::before,
+.slick-prev::after{
+    transform: rotate(55deg);
+}
+
+.slick-next, .slick-prev{
+    top: 50%;
+}
+
+.slick-next {
+    right: 60px;
+}
+
+.slick-prev::before, .slick-next::before,
+.slick-prev::after, .slick-next::after {
+    color: white;
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0.75;
+}
+
+.slick-prev:hover:after, .slick-prev:focus:after, .slick-next:hover:after, .slick-next:focus:after {
+    opacity: 1;
+}
+
+.slick-prev.slick-disabled::before, .slick-next.slick-disabled::before,
+.slick-prev.slick-disabled::after, .slick-next.slick-disabled::after {
+    opacity: 0;
+}
+
+.slick-slider {
+    margin-bottom: 0;
+}
+/*============  slick carousel  ===========*/
+
+
+
+/*========== Owl Carousel ==========*/
+.owl-prev {
+    left: -20px;
+}
+
+.owl-next {
+    right: 0;
+}
+
+.owl-prev, .owl-next{
+    top: 35%;
+    height: 40px;
+    opacity: 0.5;
+    position: absolute;
+    width: 30px;
+    transition: .2s;
+}
+
+.owl-prev.disabled,
+.owl-next.disabled{
+    opacity: 0;
+}
+
+.owl-prev:hover, .owl-next:hover{
+    opacity: 1;
+}
+
+.owl-prev a::before,
+.owl-prev a::after,
+.owl-next a::before,
+.owl-next a::after{
+    background-color: white;
+    content: "";
+    display: block;
+    height: 50%;
+    left: 50%;
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+}
+
+.owl-prev a::before{
+    top: 10%;
+    transform: rotate(30deg);
+}
+
+.owl-prev a::after {
+    transform: rotate(-30deg);
+}
+
+.owl-next a::before{
+    top: 10%;
+    transform: rotate(-30deg);
+}
+
+.owl-next a::after {
+    transform: rotate(30deg);
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
+}
+/*========== Owl Carousel ==========*/
+
+
+
+
+
+/*==============  header  ==============*/
+.main_logo_container{
+    height: 130px;
+}
+
+.logo{
+    background-image: url("../img/main_logo_color.png");
+    background-size: contain;
+    height: 97px;
+    left: 1.5rem;
+    position: absolute;
+    top: -11px;
+    width: 200px;
+}
+
+.announse_wrapper {
+    overflow-y: hidden;
+    /*height: 80px;*/
+}
+
+.announse_point {
+    height: 100%;
+}
+
+.announse {
+    height: 80px;
+    /*padding-top: 20px;*/
+    /*width: 1300px;*/
+}
+
+/*==============  header  ==============*/
+
+
+
+
+
+/*==============  Main Event  ==============*/
+.main_event{
+    /*min-height: 400px;*/
+    position: relative;
+}
+
+.main_event h1,
+.main_event .h1{
+    font-weight: bold;
+}
+
+.main_event:after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    /*background: hsla(180, 0%, 0%, 0.15);*/
+    background-color: #000000;
+    pointer-events: none;
+    margin-left: -1rem;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.image_toning{
+    position: absolute;
+    opacity: .3;
+    z-index: 2;
+    left: 0;
+}
+
+.image_toning:after{
+    display: block;
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: 2;
+}
+
+.main_event{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main_event .content{
+    z-index: 3;
+}
+
+.main_event h1{
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+}
+
+.main_event .match_result .count{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 5em;
+}
+
+.main_news .advert_container{
+    padding-top: 1rem;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.main_news .news_container{
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 0;
+}
+
+.main_news{
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/*.match_result.duel > div:first-child::after{*/
+    /*content: ":";*/
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    /*font-size: 5em;*/
+    /*display: inline-block;*/
+/*}*/
+/*==============  Main Event  ==============*/
+
+
+
+
+
+
+/*====== Best Players Main ======*/
+.best-players-carousel{
+    padding: 1.5rem;
+}
+/*====== Best Players Main ======*/
+
+
+
+
+
+/*======== Vacancies ========*/
+.vacancies_main_preview{
+    padding: 1.5rem;
+}
+/*======== Vacancies ========*/
+
+
+
+ /*========== Sponsors ==========*/
+.sponsors{
+    padding: 1.5rem;
+}
+ /*========== Sponsors ==========*/
+
+
+
+
+/*========= News =========*/
+.news_item .comment i{
+    font-size: 1.4em;
+}
+
+.global_new_item{
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.global_news .news_item .date{
+    margin-bottom: 0.25rem;
+}
+
+.global_news .news_item{
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.global_new_item .advert_container,
+.global_news .advert_container{
+    padding-top: 1rem;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.global_new_item .content{
+    padding-top: 1.5rem;
+}
+/*========= News =========*/
+
+
+/*========  Лучшие игроки  ========*/
+.best-players .photo {
+    height: 150px;
+}
+/*========  Лучшие игроки  ========*/
+
+
+/*=======  Партнёры и спонсоры  =======*/
+.partners_logo_list a{
+    max-height: 150px;
+    max-width: 200px;
+}
+
+.partners_logo_list div img{
+    width: 100%;
+}
+/*=======  Партнёры и спонсоры  =======*/
+
+
+
+
+
+/*========== События ==========*/
+.event-item a{
+    border: 3px solid #ffffff;
+    transition: .2s;
+    position: relative;
+}
+
+.event-item .bg{
+    position: absolute;
+    filter: brightness(80%);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .2s;
+}
+
+.event-item a:hover{
+    /*color: white;*/
+    border-color: rgba(37, 37, 37, 1);
+}
+
+.event-item a:hover .bg{
+    /*opacity: 1;*/
+}
+
+.event-item{
+    position: relative;
+    /*max-width: 50%;*/
+}
+
+.event_short_gallery_wrapper{
+    position: relative;
+}
+
+.details{
+    /*position: absolute;*/
+    /*z-index: 2;*/
+    /*bottom: 20px;*/
+    margin-bottom: 2rem;
+}
+
+.event_short_gallery{
+    /*padding-top: 1rem;*/
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.event_short_gallery .gallery_item{
+    height:400px;
+}
+
+.event_short_gallery .gallery_item img{
+    height: 100%;
+}
+
+.event_short_gallery .owl-prev {
+    left: 10px;
+}
+
+.event_short_gallery .owl-next {
+    right: 10px;
+}
+
+.event_short_gallery .owl-prev, .owl-next {
+    top: 45%;
+}
+
+.global_event{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.global_event .data{
+    margin-bottom: .5rem;
+}
+
+.global_event .row .data{
+
+}
+
+
+/*========== События ==========*/
+
+
+
+
+/*Базовая страница*/
+
+.global_base{
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.global_base .content{
+    padding-top: 1.5rem;
+}
+
+
+
+
+/*------------------------------     Footer     ------------------------------*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 200px;
+}
+
+.footer > div{
+    padding-top: 30px;
+    border-top: 1px solid rgba(37, 37, 37, 1);
+}
+
+.footer .copyright{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.footer .copyright .head {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer_menu_item .head {
+    font-size: 22px;
+}
+
+.footer_menu_item {
+    /*margin-right: 40px;*/
+    line-height: 1.8em;
+}
+

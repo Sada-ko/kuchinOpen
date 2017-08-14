@@ -1,0 +1,238 @@
+/*------------------------       Medium devices (tablets, 768px and up)    ------------------------*/
+@media (min-width: 768px) {
+
+    .navbar {
+        padding: 0 !important;
+    }
+
+    .announse {
+        padding-right: 60px;
+    }
+
+
+    /*==============  Main Event  ==============*/
+    .main_event .content {
+        padding-top: 5rem;
+        padding-right: 5rem;
+    }
+
+
+
+
+
+    /*slick*/
+    .slick-next {
+        right: 10px;
+    }
+
+
+    /*============  News  ============*/
+    .main_news {
+        /*padding-right: 400px;*/
+    }
+
+
+    .footer_menu_item{
+        font-size: 0.9em;
+    }
+
+}
+
+
+
+/*------------------------       Medium devices (tablets, less than 992px)    ------------------------*/
+@media (max-width: 991px) {
+
+    nav .container_mid {
+        padding-left: 80px;
+    }
+
+    h2, .h2 {
+        font-size: 1.8rem;
+    }
+
+    /*==============  Main Event  ==============*/
+    .main_event h1 {
+        font-size: 3.5rem;
+    }
+
+    .main_event .container_mid {
+        padding-left: 80px;
+    }
+
+
+
+}
+
+
+
+
+/*-----------------------       Large devices (desktops, 992px and up)    -------------------------*/
+@media (min-width: 992px) {
+
+    /*==============  Main Event  ==============*/
+    .main_event .content {
+        padding-right: 25%;
+    }
+
+    h1{
+        font-size: 4.5em;
+        margin-left: -0.15rem;
+    }
+
+}
+
+
+
+
+/*-----------------------     Extra large devices (large desktops, 1200px and up)    -------------------------*/
+@media (min-width: 1200px) {
+
+    .long-right-padding{
+        padding-right: 20% !important;
+    }
+
+}
+
+
+/*-------------------   Small devices (landscape phones, less than 768px)    --------------------*/
+
+@media (max-width: 767px) {
+
+    .container_mid,
+    .container_wid {
+        padding-left: 0;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0;
+    }
+
+    .main_logo_container {
+        height: 85px;
+    }
+
+    .main_logo_container .container_mid {
+        padding-left: 140px;
+        padding-right: 0 !important;
+    }
+
+
+    .announse_wrapper {
+     font-size: 0.8em;
+    }
+
+    .announse {
+        padding-right: 30px;
+        /*padding-top: 15px;*/
+    }
+
+    .content {
+        /*padding-left: 10px;*/
+        padding-right: 0;
+    }
+
+
+
+
+    /*========== Logo ===========*/
+    .logo {
+        height: 58px;
+        left: 0.5rem;
+        top: -15px;
+        width: 120px;
+    }
+
+
+
+    /*========= Slick =========*/
+    .slick-next {
+        right: 0;
+    }
+
+    .slick-prev{
+        display: none !important;
+    }
+
+
+    /*======== Owl =========*/
+    .owl-next {
+        height: 30px;
+    }
+
+    .owl-prev{
+        display: none;
+    }
+
+    .owl-next {
+        right: 0;
+    }
+
+
+
+    /*==============  Main Event  ==============*/
+
+    .main_event .content {
+        padding-top: 2rem;
+    }
+
+    .main_event h1 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .main_event .match_result .count{
+        font-size: 3.5em;
+    }
+
+    .main_event .container_mid {
+        padding-left: 0;
+    }
+
+
+
+    /*============  News  ============*/
+    .news_container{
+        /*padding-left: 0;*/
+        padding-bottom: 3rem;
+    }
+
+
+    /*========= Лучшие игроки ========*/
+
+    .best-player_item span.sports-font{
+        position: relative;
+    }
+
+
+    /*======= События =======*/
+
+    .event_short_gallery .gallery_item{
+        height:200px;
+    }
+
+
+
+
+
+    /*================ footer ===============*/
+    .footer .copyright {
+        position: relative;
+        top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .footer_menu_item{
+        margin-bottom: 2rem;
+    }
+
+    .social_footer.ml-auto {
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+
+}
+
+
+
