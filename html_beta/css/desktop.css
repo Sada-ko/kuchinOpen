@@ -26,8 +26,6 @@
     text-rendering: auto;
 }
 
-
-
 html {
     -moz-osx-font-smoothing: grayscale !important;
     -webkit-font-smoothing: antialiased !important;
@@ -59,8 +57,12 @@ body {
     border: none;
 }
 
+.nav-item a.active {
+    cursor: default;
+}
+
 .nav-pills .nav-link {
-    border-radius: 0;
+    /*border-radius: 0;*/
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -86,6 +88,11 @@ body {
     color: rgba(197, 0, 42, 1);
     border-bottom-color: rgba(197, 0, 42, .5);
     text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active:focus,
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: rgba(0, 0, 0, 0.3);
 }
 /*========= navbar =========*/
 
@@ -716,6 +723,13 @@ button, .btn {
     color: rgb(37, 37, 37);
 }
 
+
+
+/*=========     Личный кабинет     =========*/
+.userpic{
+    width: 200px;
+}
+/*=========     Личный кабинет     =========*/
 
 
 
