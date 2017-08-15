@@ -11,7 +11,7 @@
     <!--Favicon-->
     <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico">
 
-    <title>Прошедшее событие — Kuchin Open Tournament</title>
+    <title>Вход — Kuchin Open Tournament</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -67,7 +67,7 @@
 
     <!--Регистрация и все дела-->
     <div class="service_block">
-        <a href="cabinet_private.html" class="border-0">
+        <a href="#" class="border-0">
             <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
         </a>
     </div>
@@ -84,96 +84,146 @@
     </div>
 </div>
 
-<!--=============   События   =============-->
-<div class="global_event">
-    <div class="container_wid m-0">
 
-        <div class="text-muted"><span class="sports-font soccer"></span> Турнир по футболу</div>
-        <h1 class="cond-caps">Kuchin Open F9</h1>
+<!--=============   Регистрация   =============-->
+<div class="global_base">
+    <div class="container_wid row m-0">
 
-        <div class="row">
-            <div class="data col-12 col-md-6 col-lg-3">
-                <!--<hr/>-->
-                <div class="date h3 m-0">22 мая</div>
-                <i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+        <div class="col-md-12 col-lg-8 col-xl-9 pl-0 pr-4">
 
-                <div class="d-inline">ЦПС &laquo;Пляж&raquo;, Санкт-Петербург, ул. Фучика, д. 2А
+            <!--<h1>Личный кабинет</h1>-->
+
+            <div class="content">
+
+                <!--Меню с вкладками-->
+                <ul class="nav nav-tabs mb-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cabinet_private.html">Личная информация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active volleyball_gradient" href="#">
+                            <small><span class="sports-font volleyball"></span></small>
+                            Волейбол</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <small><span class="sports-font soccer"></span></small>
+                            Футбол</a>
+                    </li>
+                </ul>
+
+                <div class="common-form-container form_registration col-md-12 col-lg-10 col-xl-8 px-0 mb-4">
+
+                    <fieldset disabled>
+
+                        <!--Логин-->
+                        <div class="form-group row">
+                            <label for="disabled-login" class="col-sm-12 col-md-2 col-form-label">Login
+                            </label>
+
+                            <div class="col-10">
+                                <input type="text" id="disabled-login" class="form-control"
+                                       placeholder="Login">
+
+                            </div>
+                        </div>
+
+                        <!--Почта-->
+                        <div class="form-group row">
+                            <label for="email-input"
+                                   class="col-sm-12 col-md-2 col-form-label">Email</label>
+
+                            <div class="col-10">
+                                <input class="form-control" type="email"
+                                       value="bootstrap@example.com"
+                                       id="email-input">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!--Телефон-->
+                    <div class="form-group row">
+                        <label for="tel-input"
+                               class="col-sm-12 col-md-2 col-form-label">Telephone</label>
+
+                        <div class="col-10">
+                            <input class="form-control" type="tel" value="1-(555)-555-5555"
+                                   id="tel-input">
+                        </div>
+                    </div>
+
+                    <!--Смена пароля-->
+                    <div class="form-group row">
+
+                        <div class="col-10 ml-md-auto">
+                            <a href="" class="btn btn-light">Сменить пароль</a>
+                        </div>
+                    </div>
+
+                    <!--О себе-->
+                    <div class="form-group row">
+                        <label for="about-input"
+                               class="col-sm-12 col-md-2 col-form-label">О себе</label>
+
+                        <div class="col-10">
+                            <textarea class="form-control" type="tel" value="1-(555)-555-5555"
+                                      id="about-input"></textarea>
+                        </div>
+                    </div>
+
+                    <!--Виды спорта-->
+                    <fieldset class="form-group">
+                        <legend>Виды спорта</legend>
+                        <div class="pl-3">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input"
+                                           name="optionsRadios" id="optionsRadios1" value="option1"
+                                           checked>
+                                    Футбол
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input"
+                                           name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Волейбол
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input"
+                                           name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Пляжный волейбол
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input"
+                                           name="optionsRadios" id="optionsRadios3" value="option3">
+                                    Баскетбол
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group row">
+                        <div class="col-10 ml-md-auto">
+                            <a class="btn btn-primary my-3" href="news_list.html" role="button">
+                                Сохранить изменения
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
 
     </div>
 </div>
 
-<!--Мини-галерея фотографий к прошедшему событию-->
-<div class="event_short_gallery_wrapper">
-
-    <div class="event_short_gallery inverted owl-carousel">
-
-        <div class="gallery_item d-inline-block">
-            <img src="img/sport/1q0VO0stu-g.jpg" alt="">
-        </div>
-
-        <div class="gallery_item d-inline-block">
-            <img src="img/sport/7HU2Ua97itY.jpg" alt="">
-        </div>
-
-        <div class="gallery_item d-inline-block">
-            <img src="img/sport/cKRCS3HLS1M.jpg" alt="">
-        </div>
-
-        <div class="gallery_item d-inline-block">
-            <img src="img/sport/piS3qWntOJU.jpg" alt="">
-        </div>
-
-        <div class="gallery_item d-inline-block">
-            <img src="img/sport/yl8TiMspmJo.jpg" alt="">
-        </div>
-
-    </div>
-</div>
-
-<div class="global_event">
-    <div class="container_wid m-0">
-
-        <!--Ссылки с подробными отчётами-->
-        <nav class="details nav">
-            <li class="nav-item">
-                <i class="fa fa-play" aria-hidden="true"></i>
-                <a class="nav-link p-0 mr-4 d-inline active" href="#">
-                    Видео
-                </a>
-            </li>
-            <li class="nav-item">
-                <i class="fa fa-camera" aria-hidden="true"></i>
-                <a class="nav-link p-0 mr-4 d-inline" href="#">Фото</a>
-            </li>
-            <li class="nav-item">
-                <i class="fa fa-list" aria-hidden="true"></i>
-                <a class="nav-link p-0 mr-4 d-inline" href="#">Результаты</a>
-            </li>
-        </nav>
-
-        <div class="col-sm-12 col-xl-9 px-0">
-            <p>Хочу выразить свою благодарность руководству ЦПС &laquo;Пляж&raquo; за&nbsp;предоставленную
-                возможность безвозмездно провести наш турнир в&nbsp;Вашем комплексе. Всем советую
-                зарегистрироваться на&nbsp;сайте ЦПС &laquo;Пляж&raquo;&nbsp;&mdash;
-                http://plyazhspb.ru, подписывайтесь на&nbsp;социальные сети
-                <a href="https://vk.com/plyazh_cps">VK</a> и&nbsp;<a
-                        href="https://www.instagram.com/plyazhspb/">Инстаграм</a>. Насколько мне
-                известно там планируется
-                много интересной информации и&nbsp;спец. предложений.</p>
-
-            <p>Также большая благодарность клубу BVC за&nbsp;безвозмездно предоставленный инвентарь&nbsp;&mdash;
-                сетки и&nbsp;разметки&nbsp;&mdash; для проведения турнира Kuchin Open BV1</p>
-        </div>
-
-        <a class="btn btn-secondary my-3" href="events_list.html" role="button">
-            <i class="fa fa-angle-left mr-2" aria-hidden="true"></i>К событиям
-        </a>
-
-    </div>
-</div>
 
 <!--=============   Подвал   =============-->
 <footer class="footer px-md-5 px-4 pt-4 ">

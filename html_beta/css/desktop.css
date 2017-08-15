@@ -55,6 +55,10 @@ body {
     margin-left: -1rem;
 }
 
+.nav a{
+    border: none;
+}
+
 .nav-pills .nav-link {
     border-radius: 0;
 }
@@ -67,28 +71,21 @@ body {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.open,
 .navbar-light .navbar-nav .nav-link.active {
-    color: rgba(255, 255, 255, 1);
+    /*color: rgba(255, 255, 255, 1);*/
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar-light .navbar-nav .nav-link.open:hover,
 .navbar-light .navbar-nav .nav-link.active:hover{
-    color: rgba(255, 255, 255, 1);
-}
-
-.show > .nav-pills .nav-link {
-    background-color: transparent;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .nav-item.show .nav-link,
-.show > .nav-pills .active .nav-link{
-    background-color: rgba(37, 37, 37, 1);
+    /*color: rgba(255, 255, 255, 1);*/
+    /*color: rgba(0, 0, 0, 0.3);*/
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-color: rgba(255, 255, 255, 1);
-background-color: rgba(37, 37, 37, 1);
+    color: rgba(197, 0, 42, 1);
+    border-bottom-color: rgba(197, 0, 42, .5);
+    text-decoration: none;
 }
 /*========= navbar =========*/
 
@@ -205,6 +202,24 @@ a:hover, .link:hover, a:hover .link{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5002a', endColorstr='#690166',GradientType=1 ); /* IE6-9 */
 }
 
+.soccer_gradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5002a+0,690166+100 */
+    background: #826b61; /* Old browsers */
+    background: -moz-linear-gradient(left, #826b61 0%, #a33b64 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #826b61 0%,#a33b64 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #826b61 0%,#a33b64 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#826b61', endColorstr='#a33b64',GradientType=1 ); /* IE6-9 */
+}
+
+.volleyball_gradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5002a+0,690166+100 */
+    background: #3a405a; /* Old browsers */
+    background: -moz-linear-gradient(left, #3a405a 0%, #7b0c75 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3a405a 0%,#7b0c75 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3a405a 0%,#7b0c75 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a405a', endColorstr='#7b0c75',GradientType=1 ); /* IE6-9 */
+}
+
 .dummy{
     background-color: gray;
 }
@@ -314,67 +329,6 @@ button, .btn {
 }
 /*======= Tables =======*/
 
-
-
-/*============  slick carousel  ===========*/
-.slick-prev, .slick-next {
-    width: 17px;
-}
-
-.slick-next::after, .slick-next::before,
-.slick-prev::after, .slick-prev::before{
-    border-top: 1px solid white;
-    content: "" !important;
-    display: block;
-}
-
-.slick-prev::after,
-.slick-next::after{
-    margin-top: 13px;
-}
-
-
-.slick-next::after,
-.slick-prev::before{
-    top: 24px;
-    transform: rotate(-55deg);
-}
-
-.slick-next::before,
-.slick-prev::after{
-    transform: rotate(55deg);
-}
-
-.slick-next, .slick-prev{
-    top: 50%;
-}
-
-.slick-next {
-    right: 60px;
-}
-
-.slick-prev::before, .slick-next::before,
-.slick-prev::after, .slick-next::after {
-    color: white;
-    font-family: "slick";
-    font-size: 20px;
-    line-height: 1;
-    opacity: 0.75;
-}
-
-.slick-prev:hover:after, .slick-prev:focus:after, .slick-next:hover:after, .slick-next:focus:after {
-    opacity: 1;
-}
-
-.slick-prev.slick-disabled::before, .slick-next.slick-disabled::before,
-.slick-prev.slick-disabled::after, .slick-next.slick-disabled::after {
-    opacity: 0;
-}
-
-.slick-slider {
-    margin-bottom: 0;
-}
-/*============  slick carousel  ===========*/
 
 
 
@@ -754,6 +708,12 @@ button, .btn {
 
 .global_base .content{
     padding-top: 1.5rem;
+}
+
+.nav-pills .nav-link.active,
+.show > .nav-pills .nav-link {
+    background-color: #e2e6ea;
+    color: rgb(37, 37, 37);
 }
 
 
