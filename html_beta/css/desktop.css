@@ -197,7 +197,8 @@ a:hover, .link:hover, a:hover .link{
 }
 
 .inverted .text-muted {
-    color: rgba(255, 255, 255, .5);
+    /*color: rgba(255, 255, 255, .5);*/
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 .all_sports_gradient{
@@ -225,6 +226,24 @@ a:hover, .link:hover, a:hover .link{
     background: -webkit-linear-gradient(left, #3a405a 0%,#7b0c75 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, #3a405a 0%,#7b0c75 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a405a', endColorstr='#7b0c75',GradientType=1 ); /* IE6-9 */
+}
+
+.basketball_gradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5002a+0,690166+100 */
+    background: #62929d; /* Old browsers */
+    background: -moz-linear-gradient(left, #62929d 0%, #2d8a60 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #62929d 0%,#2d8a60 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #62929d 0%,#2d8a60 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62929d', endColorstr='#2d8a60',GradientType=1 ); /* IE6-9 */
+}
+
+.beach-volleyball_gradient{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5002a+0,690166+100 */
+    background: #a4b300; /* Old browsers */
+    background: -moz-linear-gradient(left, #a4b300 0%, #d18202 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #a4b300 0%,#d18202 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #a4b300 0%,#d18202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b300', endColorstr='#d18202',GradientType=1 ); /* IE6-9 */
 }
 
 .dummy{
@@ -482,6 +501,7 @@ button, .btn {
     height: 100%;
     opacity: .3;
     z-index: 2;
+    content: "";
 }
 
 .main_event{
@@ -695,10 +715,80 @@ button, .btn {
     margin-bottom: .5rem;
 }
 
-.global_event .row .data{
-
+.event-list-year .card{
+    margin-bottom: 1rem;
+    transition: .2s;
 }
 
+.event-list-year h2{
+    margin-bottom: 1.5rem;
+}
+
+.event-list-year .card:hover{
+    box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.2);
+}
+
+.event-list-year .card .card-wrapper{
+    border: none;
+    z-index: 2;
+    height: 100%;
+}
+
+.event-list-year .card-img-overlay {
+    z-index: 2;
+    padding: 0;
+}
+
+.event-list-year .card .date{
+    /*font-style: italic;*/
+    padding-left: 1.5rem;
+}
+
+.event-list-year .card .gender{
+    padding-left: 1.5rem;
+}
+
+.event-list-year .card .card-footer{
+    background-color: transparent;
+}
+
+.event-list-year .card .status{
+    padding-left: 1.5rem;
+}
+
+.event-list-year .card-title{
+    display: inline;
+}
+
+.event-list-year.photo-gallery .card{
+    padding-bottom: .5rem;
+    border-width: 0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+.event-list-year.photo-gallery .card .image_toning{
+    border-radius: 0.25rem;
+    opacity: .6;
+}
+
+.event-list-year.photo-gallery .card .image_toning:after{
+    border-radius: 0.25rem;
+}
+
+.event-list-year .card .photo-quantity,
+.event-list-year .card .photo-video-quantity{
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    /*font-weight: bold;*/
+}
+
+.event-list-year .card .photo-video-quantity a{
+    margin-right: 1rem;
+}
+
+.event-list-year .card .photo-video-quantity a:last-child{
+    margin-right: 0 ;
+}
 
 /*========== События ==========*/
 
@@ -723,6 +813,10 @@ button, .btn {
     color: rgb(37, 37, 37);
 }
 
+/*.main_logo_container.type_404 {*/
+    /*margin-top: 3rem;*/
+/*}*/
+
 
 
 /*=========     Личный кабинет     =========*/
@@ -730,6 +824,132 @@ button, .btn {
     width: 200px;
 }
 /*=========     Личный кабинет     =========*/
+
+
+
+
+
+
+/*Список фото с события*/
+.event-media-list .photo,
+.event-media-list .video{
+    height: 100px;
+    display: block;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.event-media-list .video{
+    height: 200px;
+}
+
+.event-media-list .media-container{
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.event-media-list .media-container .preview-icon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+    opacity: 0;
+    transition: .2s;
+    font-size: 2rem;
+}
+
+.event-media-list .media-container .video .preview-icon {
+    font-size: 3rem;
+}
+
+.event-media-list .media-container .video .preview-icon {
+    padding-top: 100px;
+}
+
+.event-media-list .media-container .preview-icon i{
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -3rem;
+}
+
+.event-media-list .media-container .video .preview-icon i {
+    margin-top: -4rem;
+}
+
+.event-media-list .media-container .preview-icon:hover{
+    opacity: .6;
+}
+
+.photo-full{
+    position: relative;
+    margin-bottom: 1rem;
+    max-width: 1200px;
+}
+
+#vk_like{
+    /*position: absolute !important;*/
+    /*bottom: 1rem;*/
+    /*right: 1rem;*/
+    margin-bottom: 1rem;
+}
+
+#vk_comments{
+    max-width: 768px;
+}
+
+.photo-full .media-container,
+.video-full .media-container{
+    position: relative;
+}
+
+.media-container .arrow{
+    position: absolute;
+    top: 50%;
+}
+
+.media-container .arrow-container{
+    display: block;
+    height: 100%;
+    background-color: #fff;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    border: none;
+}
+
+.media-container .arrow-container:hover{
+    background-color: #f5f5f5;
+}
+
+.media-container .arrow-container.right{
+    right: -40px;
+}
+
+.media-container .arrow-container.right i{
+    margin-left: 1rem;
+}
+
+.media-container .arrow-container.left{
+    left: -40px;
+}
+
+.media-container .arrow-container.left i{
+    margin-left: 1rem;
+}
+
+.video-full{
+    max-width: 768px;
+    margin-bottom: 1rem;
+}
+/*Список фото с события*/
+
+
 
 
 

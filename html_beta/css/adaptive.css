@@ -61,6 +61,18 @@
     }
 
 
+    /*Список фото с события*/
+    .event-photos-list .photo{
+        height: 150px;
+    }
+
+    .event-photos-list .media-container .preview-icon {
+        padding-top: 75px;
+    }
+    /*Список фото с события*/
+
+
+
 
 }
 
@@ -231,6 +243,27 @@
         right: 0;
         top: 30px;
     }
+
+
+    /*Список фото с события*/
+    .event-photos-list .photo{
+        height: 200px;
+    }
+
+    .event-photos-list .media-container .preview-icon {
+        padding-top: 100px;
+    }
+
+    .event-media-list .video{
+        height: 300px;
+    }
+
+    .event-media-list .media-container .video .preview-icon {
+        padding-top: 150px;
+    }
+
+    /*Список фото с события*/
+
 
 }
 
