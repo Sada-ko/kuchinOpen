@@ -11,7 +11,7 @@
     <!--Favicon-->
     <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico">
 
-    <title>Вход — Kuchin Open Tournament</title>
+    <title>Фотка с события — Kuchin Open Tournament</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -24,6 +24,16 @@
 
     <!--font-awesome-->
     <script src="https://use.fontawesome.com/79ca9ae758.js"></script>
+
+    <!--VK vidget-->
+    <script src="https://vk.com/js/api/openapi.js?149" type="text/javascript"></script>
+
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?149"></script>
+
+    <script type="text/javascript">
+        VK.init({apiId: 6202665, onlyWidgets: true});
+    </script>
 
 </head>
 
@@ -67,9 +77,10 @@
 
     <!--Регистрация и все дела-->
     <div class="service_block">
-        <a href="cabinet_private.html" class="border-0">
+        <!--<a href="cabinet_private.html" class="border-0">
             <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-        </a>
+        </a>-->
+        <a href="authorization.html" class="btn btn-secondary">Войти</a>
     </div>
 
 </nav>
@@ -84,43 +95,63 @@
     </div>
 </div>
 
-
-<!--=============   Регистрация   =============-->
-<div class="global_base">
+<!--=============   Фотка   =============-->
+<div class="global_new_item">
     <div class="container_wid m-0">
 
 
-        <!--<h1>Личный кабинет</h1>-->
+        <div class="date font-italic text-muted">
+            22 мая
+        </div>
+
+        <h1>Финалы и&nbsp;НАГРАЖДЕНИЯ&nbsp;&mdash; 21&nbsp;мая 2017&nbsp;г.</h1>
+
+
+        <a class="btn btn-secondary my-3" href="event_photos_list.html" role="button">
+            <i class="fa fa-angle-left mr-2" aria-hidden="true"></i>К списку фото
+        </a>
 
         <div class="content">
 
-            <!--Меню с вкладками-->
-            <ul class="nav nav-pills mb-5">
-                <li class="nav-item">
-                    <a class="nav-link" href="cabinet_private.html">Личная информация</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">
-                        <small><span class="sports-font volleyball"></span></small>
-                        Волейбол</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <small><span class="sports-font soccer"></span></small>
-                        Футбол</a>
-                </li>
-            </ul>
 
-            <div class="common-form-container form_registration col-md-12 col-lg-10 col-xl-8 px-0 mb-4">
+            <div class="photo-full">
 
+
+                <div class="media-container">
+
+                    <!--Стрелка влево-->
+                    <a href="#" class="arrow-container left">
+                        <i class='arrow fa fa-angle-left' aria-hidden='true'></i>
+                    </a>
+
+                    <!--Сама фотка-->
+                    <img src="img/sport/n5k6GawQukA.jpg" alt="">
+
+                    <!--Стрелка вправо-->
+                    <a href="#" class="arrow-container right">
+                        <i class='arrow fa fa-angle-right' aria-hidden='true'></i>
+                    </a>
+
+                </div>
 
             </div>
+
+            <!-- Like block -->
+            <div id="vk_like"></div>
+            <script type="text/javascript">
+                VK.Widgets.Like("vk_like", {type: "button"});
+            </script>
+
+            <!-- Comments block -->
+            <div id="vk_comments"></div>
+            <script type="text/javascript">
+                VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+            </script>
 
         </div>
 
     </div>
 </div>
-
 
 <!--=============   Подвал   =============-->
 <footer class="footer px-md-5 px-4 pt-4">

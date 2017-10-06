@@ -26,6 +26,16 @@
     }
 
 
+    /*Список фото с события*/
+    .event-media-list .photo {
+        height: 150px;
+    }
+
+    .event-media-list .media-container .preview-icon {
+        padding-top: 70px;
+    }
+
+
     /*============  News  ============*/
     .main_news {
         /*padding-right: 400px;*/
@@ -102,6 +112,30 @@
 
     .long-right-padding{
         padding-right: 20% !important;
+    }
+
+    /*Список фото с события*/
+    .event-media-list .photo {
+        height: 150px;
+    }
+
+    .event-media-list .media-container .preview-icon {
+        padding-top: 70px;
+    }
+
+}
+
+
+/*-----------------------     Extra large devices (large desktops, 1400px and up)    -------------------------*/
+@media (min-width: 1400px) {
+
+    /*Список фото с события*/
+    .event-media-list .photo {
+        height: 200px;
+    }
+
+    .event-media-list .media-container .preview-icon {
+        padding-top: 100px;
     }
 
 }
@@ -263,7 +297,13 @@
     }
 
     /*Список фото с события*/
+    .event-media-list .photo {
+        height: 150px;
+    }
 
+    .event-media-list .media-container .preview-icon {
+        padding-top: 70px;
+    }
 
 }
 
