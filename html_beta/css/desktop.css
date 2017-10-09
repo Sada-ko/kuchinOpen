@@ -97,6 +97,9 @@ body {
 /*========= navbar =========*/
 
 
+h1{
+    margin-left: -0.2rem;
+}
 
 h1, h2{
     font-family: 'Open Sans Condensed', sans-serif;
@@ -585,7 +588,7 @@ button, .btn {
 }
 
 .global_new_item{
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
