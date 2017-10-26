@@ -113,6 +113,10 @@
         padding-right: 20% !important;
     }
 
+    .search-form{
+        display: inline-block;
+    }
+
     /*Список фото с события*/
     .event-media-list .photo {
         height: 150px;

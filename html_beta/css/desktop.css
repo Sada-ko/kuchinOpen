@@ -178,7 +178,7 @@ a:hover, .link:hover, a:hover .link{
 .service_block{
     display: block;
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     top: 5px;
     /*width: 410px;*/
     text-transform: none;
@@ -196,8 +196,8 @@ a:hover, .link:hover, a:hover .link{
 }
 
 .search-form{
-    width: 230px;
-    display: inline-block;
+    width: 200px;
+    display: none;
     vertical-align: top;
 }
 
@@ -881,13 +881,24 @@ button, .btn {
 }
 
 
-.players_global_list .card .image_toning,
-.players_global_list .image_toning::after{
+.players_global_list .card .image_toning{
     opacity: .3;
+}
+
+.players_global_list .image_toning::after{
+    opacity: .4;
 }
 
 .players_global_list .card-body {
     padding: 1.25rem 2rem;
+}
+
+.sport-status .sports-font, .sport-status .league {
+    vertical-align: middle;
+}
+
+.sport-status{
+    margin-right: 1rem;
 }
 /*Список игроков*/
 
