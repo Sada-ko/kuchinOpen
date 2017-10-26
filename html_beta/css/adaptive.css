@@ -308,3 +308,11 @@
 
 
 
+/*-----------------------       Large devices (desktops, 992px and up)    -------------------------*/
+@media (min-width: 2100px) {
+
+    .players_global_list .player_item{
+        max-width: 8.333333%;
+    }
+
+}

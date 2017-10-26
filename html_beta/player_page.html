@@ -11,7 +11,7 @@
     <!--Favicon-->
     <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico">
 
-    <title>Личная информация — Kuchin Open Tournament</title>
+    <title>Страница игрока — Kuchin Open Tournament</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -35,6 +35,7 @@
             data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
             aria-expanded="false" aria-label="Toggle navigation">
         <!--<span class="navbar-toggler-icon"></span>-->
+
         <h3 class="m-0"><i class="fa fa-bars" aria-hidden="true"></i></h3>
     </button>
 
@@ -55,6 +56,7 @@
                    aria-expanded="false">
                     Dropdown link
                 </a>
+
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
@@ -65,10 +67,17 @@
 
     </div>
 
+
     <!--Регистрация и все дела-->
     <div class="service_block">
-        <a href="cabinet_private.html" class="border-0">
-            <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+
+        <!--Поиск-->
+        <form class="search-form form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+
+        <a href="cabinet_private.html" class="profile-link border-0">
+            <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i> Профиль
         </a>
     </div>
 
@@ -216,218 +225,137 @@
 <div class="content-wrapper">
 
     <!--=============   Личный кабинет   =============-->
-    <div class="global_base">
+    <div class="global_base player-profile">
         <div class="container_wid m-0">
 
 
             <!--<h1>Личный кабинет</h1>-->
 
-            <div class="content">
+            <h1>Михаил Кучин</h1>
 
-                <!--Меню с вкладками-->
-                <ul class="nav nav-pills mb-4">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Личная информация</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cabinet_sport.html">
-                            <small><span class="sports-font volleyball"></span></small>
-                            Волейбол</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <small><span class="sports-font soccer"></span></small>
-                            Футбол</a>
-                    </li>
-                </ul>
-
-
-                <h2>Михаил Кучин</h2>
-
-                <div class="row">
-                    <div class="col-md-3">
-                        <!--Аватарка-->
-                        <div class="form-group">
-                            <!--<div class="col-form-label">Юзерпик</div>-->
-
-                            <div class="userpic-change">
-                                <div class="userpic mb-4">
-                                    <img src="img/kuchin.jpg" alt="">
-                                </div>
-                                <input type="file" class="form-control-file" id="exampleInputFile"
-                                       aria-describedby="userpic-fileHelp">
-                                <small id="userpic-fileHelp" class="form-text text-muted">
-                                    Фотография может быть не более 1024 Гб весом и до 42 мегапикселей.
-                                    Спасибо за понимание.
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <!--обёртка обычной КОМПАКТНОЙ формы, т.е. поля одно за другим, подписи НАД полями-->
-                        <div class="compact-form-container col-xl-6 col-lg-8 col-md-10 col-sm-12 px-0 mb-4">
-                            <fieldset disabled>
-
-                                <!--Логин-->
-                                <div class="form-group">
-                                    <label for="disabled-login">Login</label>
-
-                                    <div>
-                                        <input type="text" id="disabled-login" class="form-control"
-                                               placeholder="Login">
-                                    </div>
-                                </div>
-
-                                <!--Почта-->
-                                <div class="form-group">
-                                    <label for="email-input">Email</label>
-
-                                    <div>
-                                        <input class="form-control" type="email"
-                                               value="bootstrap@example.com" id="email-input">
-                                    </div>
-                                </div>
-                            </fieldset>
-
-                            <!--Телефон-->
-                            <div class="form-group">
-                                <label for="tel-input">Telephone</label>
-
-                                <div class="">
-                                    <input class="form-control" type="tel" value="1-(555)-555-5555"
-                                           id="tel-input">
-                                </div>
-                            </div>
-
-                            <!--Смена пароля-->
-                            <div class="form-group">
-
-                                <div class="">
-                                    <a href="password_changing.html" class="btn btn-light">Сменить
-                                        пароль</a>
-                                </div>
-                            </div>
-
-                            <!--О себе-->
-                            <div class="form-group">
-                                <label for="about-input">О себе</label>
-
-                                <div class="">
-                            <textarea class="form-control" type="tel" value="1-(555)-555-5555"
-                                      id="about-input"></textarea>
-                                </div>
-                            </div>
-
-                            <!--Виды спорта-->
-                            <fieldset class="form-group">
-                                <legend>Виды спорта</legend>
-                                <div class="pl-3">
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"
-                                                   name="optionsRadios" id="optionsRadios1" value="option1"
-                                                   checked>
-                                            Футбол
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"
-                                                   name="optionsRadios" id="optionsRadios2" value="option2">
-                                            Волейбол
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"
-                                                   name="optionsRadios" id="optionsRadios2" value="option2">
-                                            Пляжный волейбол
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"
-                                                   name="optionsRadios" id="optionsRadios3" value="option3">
-                                            Баскетбол
-                                        </label>
-                                    </div>
-                                </div>
-                            </fieldset>
-
-                            <div class="form-group">
-                                <div>
-                                    <a class="btn btn-secondary my-3" href="news_list.html" role="button">
-                                        Сохранить изменения
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <!--Аватарка-->
+                    <div class="userpic mb-4">
+                        <img class="img-fluid" src="img/portrait68.jpg" alt="">
                     </div>
                 </div>
+                <div class="col-md-9">
 
-                <table class="table table-clean table-striped table-responsive mb-4">
-                    <thead class="">
-                    <tr class="small">
-                        <th>#</th>
-                        <th style="min-width: 100px">Хозяин</th>
-                        <th>Счёт</th>
-                        <th style="min-width: 100px">Гость</th>
-                        <th>Дата</th>
-                        <th>Стадия</th>
-                        <th>Соревнования</th>
-                        <th>Очки</th>
-                        <th>Партии</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td><a href="#">ANIMALS</a></td>
-                        <td>Лига Медиум-Юг<br/>Группа 1</td>
-                        <td><a href="#">ANIMALS</a></td>
-                        <td>12 октября 2017</td>
-                        <td>1 круг</td>
-                        <td>2017/2018</td>
-                        <td>7</td>
-                        <td>3/3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td><a href="#">Baltic Star V</a></td>
-                        <td>Женская лига В<br/>В1</td>
-                        <td><a href="#">ANIMALS</a></a></td>
-                        <td>12 октября 2017</td>
-                        <td>1 круг</td>
-                        <td>2017/2018</td>
-                        <td>7</td>
-                        <td>3/3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td><a href="#">Fishburg</a></td>
-                        <td>Лига Медиум-Юг<br/>Группа 2</td>
-                        <td><a href="#">Baltic Star V</a></td>
-                        <td>12 октября 2017</td>
-                        <td>1 круг</td>
-                        <td>2017/2018</td>
-                        <td>7</td>
-                        <td>3/3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td><a href="#">Baltic Star V</a></td>
-                        <td>Женская лига В<br/>В1</td>
-                        <td><a href="#">Fishburg</a></a></td>
-                        <td>12 октября 2017</td>
-                        <td>1 круг</td>
-                        <td>2017/2018</td>
-                        <td>7</td>
-                        <td>3/3</td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <div class="description">
 
+                        <div class="desc-item">
+
+                            <div class="ask-item d-inline-block text-muted">
+                                Дата рождения
+                            </div>
+
+                            <div class="answer-item d-inline-block">1 сентября 1977 г.</div>
+                        </div>
+
+                        <div class="desc-item">
+                            <div class="ask-item d-inline-block text-muted">
+                                Рост
+                            </div>
+
+                            <div class="answer-item d-inline-block">210 см</div>
+                        </div>
+
+                        <div class="desc-item">
+                            <div class="ask-item d-inline-block text-muted">
+                                Амплуа
+                            </div>
+
+                            <div class="answer-item d-inline-block">Хрен знает, я не шарю</div>
+                        </div>
+
+                        <div class="desc-item">
+                            <div class="ask-item d-inline-block text-muted">
+                                Уровень
+                            </div>
+
+                            <div class="answer-item d-inline-block">Любитель</div>
+                        </div>
+
+                        <div class="desc-item">
+                            <div class="ask-item d-inline-block text-muted">
+                                Стаж
+                            </div>
+
+                            <div class="answer-item d-inline-block">5 лет</div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
+            <h2>Результаты</h2>
+
+            <table class="table table-clean table-striped table-responsive mb-4">
+                <thead class="">
+                <tr class="small">
+                    <th>#</th>
+                    <th style="min-width: 100px">Хозяин</th>
+                    <th>Счёт</th>
+                    <th style="min-width: 100px">Гость</th>
+                    <th>Дата</th>
+                    <th>Стадия</th>
+                    <th>Соревнования</th>
+                    <th>Очки</th>
+                    <th>Партии</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#">ANIMALS</a></td>
+                    <td>Лига Медиум-Юг<br/>Группа 1</td>
+                    <td><a href="#">ANIMALS</a></td>
+                    <td>12 октября 2017</td>
+                    <td>1 круг</td>
+                    <td>2017/2018</td>
+                    <td>7</td>
+                    <td>3/3</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><a href="#">Baltic Star V</a></td>
+                    <td>Женская лига В<br/>В1</td>
+                    <td><a href="#">ANIMALS</a></a></td>
+                    <td>12 октября 2017</td>
+                    <td>1 круг</td>
+                    <td>2017/2018</td>
+                    <td>7</td>
+                    <td>3/3</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><a href="#">Fishburg</a></td>
+                    <td>Лига Медиум-Юг<br/>Группа 2</td>
+                    <td><a href="#">Baltic Star V</a></td>
+                    <td>12 октября 2017</td>
+                    <td>1 круг</td>
+                    <td>2017/2018</td>
+                    <td>7</td>
+                    <td>3/3</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td><a href="#">Baltic Star V</a></td>
+                    <td>Женская лига В<br/>В1</td>
+                    <td><a href="#">Fishburg</a></a></td>
+                    <td>12 октября 2017</td>
+                    <td>1 круг</td>
+                    <td>2017/2018</td>
+                    <td>7</td>
+                    <td>3/3</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <a class="btn btn-secondary my-3" href="players_list.html" role="button">
+                <i class="fa fa-angle-left mr-2" aria-hidden="true"></i>К списку игроков
+            </a>
 
         </div>
     </div>

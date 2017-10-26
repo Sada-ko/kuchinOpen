@@ -180,6 +180,25 @@ a:hover, .link:hover, a:hover .link{
     position: absolute;
     right: 1rem;
     top: 5px;
+    /*width: 410px;*/
+    text-transform: none;
+}
+
+.profile-link i {
+    font-size: 1.5rem;
+}
+
+.profile-link {
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.search-form{
+    width: 230px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .container_mid{
@@ -493,10 +512,8 @@ button, .btn {
     content: "";
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
-    /*background: hsla(180, 0%, 0%, 0.15);*/
     background-color: #000000;
     pointer-events: none;
-    margin-left: -1rem;
     opacity: 0.3;
     z-index: 2;
 }
@@ -719,28 +736,27 @@ button, .btn {
     margin-bottom: .5rem;
 }
 
-.event-list-year .card{
+.event-list-year .card,
+.players_global_list .card{
     margin-bottom: 1rem;
     transition: .2s;
 }
 
-.event-list-year h2{
+.event-list-year h2,
+.players_global_list h2{
     margin-bottom: 1.5rem;
 }
 
-.event-list-year .card:hover{
+.event-list-year .card:hover,
+.players_global_list .card:hover{
     box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.2);
 }
 
-.event-list-year .card .card-wrapper{
+.event-list-year .card .card-wrapper,
+.players_global_list .card .card-wrapper{
     border: none;
     z-index: 2;
     height: 100%;
-}
-
-.event-list-year .card-img-overlay {
-    z-index: 2;
-    padding: 0;
 }
 
 .event-list-year .card .date{
@@ -764,7 +780,8 @@ button, .btn {
     display: inline;
 }
 
-.event-list-year.photo-gallery .card{
+.event-list-year.photo-gallery .card,
+.players_global_list .card{
     padding-bottom: .5rem;
     border-width: 0;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
@@ -825,12 +842,54 @@ button, .btn {
 
 /*=========     Личный кабинет     =========*/
 .userpic{
-    width: 200px;
+    width: 100%;
 }
 /*=========     Личный кабинет     =========*/
 
 
 
+
+/*Профиль игрока*/
+
+.description{
+    padding-left: 1rem;
+}
+
+.description div{
+    vertical-align: top;
+}
+
+.player-profile .desc-item{
+    margin-bottom: .4rem;
+}
+
+.player-profile .ask-item{
+    width: 150px;
+    margin-right: 1rem;
+}
+
+/*Профиль игрока*/
+
+
+
+
+
+/*Список игроков*/
+.event-list-year.photo-gallery .card .image_toning {
+    border-radius: 0.25rem;
+    opacity: .4;
+}
+
+
+.players_global_list .card .image_toning,
+.players_global_list .image_toning::after{
+    opacity: .3;
+}
+
+.players_global_list .card-body {
+    padding: 1.25rem 2rem;
+}
+/*Список игроков*/
 
 
 
@@ -923,31 +982,33 @@ button, .btn {
 .media-container .arrow-container{
     display: block;
     height: 100%;
-    background-color: #fff;
-    width: 40px;
+    /*background-color: #fff;*/
+    width: 100px;
     position: absolute;
     top: 0;
     border: none;
+    color: white;
+    font-size: 2rem;
 }
 
 .media-container .arrow-container:hover{
-    background-color: #f5f5f5;
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .media-container .arrow-container.right{
-    right: -40px;
+    right: 0;
 }
 
 .media-container .arrow-container.right i{
-    margin-left: 1rem;
+    right: 40%;
 }
 
 .media-container .arrow-container.left{
-    left: -40px;
+    left: 0;
 }
 
 .media-container .arrow-container.left i{
-    margin-left: 1rem;
+    left: 40%;
 }
 
 .video-full{
