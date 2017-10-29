@@ -178,9 +178,8 @@ a:hover, .link:hover, a:hover .link{
 .service_block{
     display: block;
     position: absolute;
-    right: 2rem;
+    right: 3rem;
     top: 5px;
-    /*width: 410px;*/
     text-transform: none;
 }
 
@@ -280,6 +279,10 @@ a:hover, .link:hover, a:hover .link{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b300', endColorstr='#d18202',GradientType=1 ); /* IE6-9 */
 }
 
+.badge-light{
+    background-color: rgba(158, 166, 168, .2);
+}
+
 .dummy{
     background-color: gray;
 }
@@ -362,8 +365,12 @@ button, .btn {
 }
 
 .beach-volleyball::before{
-    content: "\f2e3";
+    content: "\f2e6";
 }
+
+/*.beach-volleyball::before{*/
+    /*content: "\f2e3";*/
+/*}*/
 
 .soccer::before{
     content: "\f2e5";
@@ -386,6 +393,10 @@ button, .btn {
 
 .d-table-row{
     display: table-row;
+}
+
+table{
+    max-width: 1600px !important;
 }
 /*======= Tables =======*/
 
@@ -728,7 +739,7 @@ button, .btn {
 
 .global_event{
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-right: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -749,7 +760,11 @@ button, .btn {
 
 .event-list-year .card:hover,
 .players_global_list .card:hover{
-    box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.2);
+    box-shadow: 0 1px 15px rgba(100, 100, 100, 0.2);
+}
+
+.players_global_list .card.bg-dark a:hover{
+    color: white;
 }
 
 .event-list-year .card .card-wrapper,
@@ -783,6 +798,10 @@ button, .btn {
 .event-list-year.photo-gallery .card,
 .players_global_list .card{
     padding-bottom: .5rem;
+}
+
+.event-list-year.photo-gallery .card.bg-dark,
+.players_global_list .card.bg-dark{
     border-width: 0;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
@@ -811,6 +830,10 @@ button, .btn {
     margin-right: 0 ;
 }
 
+.global_events{
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+}
 /*========== События ==========*/
 
 
@@ -821,7 +844,7 @@ button, .btn {
 .global_base{
     padding-bottom: 3rem;
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-right: 3rem;
 }
 
 .global_base .content{
@@ -852,19 +875,20 @@ button, .btn {
 /*Профиль игрока*/
 
 .description{
-    padding-left: 1rem;
+    /*padding-left: 1rem;*/
 }
 
 .description div{
     vertical-align: top;
 }
 
-.player-profile .desc-item{
-    margin-bottom: .4rem;
+.description .desc-item{
+    margin-bottom: .7rem;
+    line-height: 1.5rem;
 }
 
-.player-profile .ask-item{
-    width: 150px;
+.description .ask-item{
+    width: 100px;
     margin-right: 1rem;
 }
 
@@ -875,30 +899,52 @@ button, .btn {
 
 
 /*Список игроков*/
-.event-list-year.photo-gallery .card .image_toning {
-    border-radius: 0.25rem;
-    opacity: .4;
-}
-
-
 .players_global_list .card .image_toning{
-    opacity: .3;
+    border-radius: 0.25rem;
+    opacity: .5;
 }
 
 .players_global_list .image_toning::after{
-    opacity: .4;
+    border-radius: 0.25rem;
+    opacity: .7;
 }
 
-.players_global_list .card-body {
-    padding: 1.25rem 2rem;
+.players_global_list .card-body,
+.players_global_list .list-group-item{
+    padding: 1rem 1rem .7rem 1.7rem;
+}
+
+.players_global_list .bg-dark .card-body {
+    padding: 1.25rem 1rem .7rem 2rem;
 }
 
 .sport-status .sports-font, .sport-status .league {
     vertical-align: middle;
 }
 
+.sport-status .sports-font{
+    font-size: 1.4rem;
+}
+
 .sport-status{
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    white-space: nowrap;
+}
+
+.players_global_list .card {
+    min-height: 160px;
+}
+
+.players_global_list .player_item .bg-dark .h4 {
+    margin-bottom: 1.25rem;
+}
+
+.players_global_list .player_item .h4 {
+    line-height: 1.4;
+}
+
+.player_item .card-footer {
+    background-color: transparent;
 }
 /*Список игроков*/
 
@@ -1029,6 +1075,106 @@ button, .btn {
 /*Список фото с события*/
 
 
+
+/*Профиль команды*/
+.players_global_list .card .userpic{
+    height: 200px;
+    /*padding: 1.25rem 1rem 1.25rem 2rem;*/
+    border-radius: .25rem .25rem 0 0;
+}
+
+.statistics .answer-item {
+    font-size: 2rem;
+    font-weight: 600;
+    height: 45px;
+    text-align: right;
+    width: 60px;
+}
+
+.statistics .ask-item {
+    font-size: .9rem;
+    width: 100px;
+    margin: 0;
+}
+
+.statistics .desc-item{
+    margin: 0;
+}
+
+.statistics div {
+    vertical-align: middle;
+}
+
+.statistics{
+    margin-bottom: 3rem;
+}
+
+.team-base{
+    margin-bottom: 2rem;
+}
+
+.schedule{
+    margin-bottom: 3rem;
+}
+
+.schedule table, .schedule table th{
+    text-align: center;
+}
+
+.player_item .bg-dark .perks {
+    margin-bottom: 1.3rem;
+    padding-top: .5rem;
+}
+
+.list-group-item .perks{
+    margin-bottom: 0;
+}
+
+.perk{
+    white-space: nowrap;
+    margin-right: 0.5rem;
+}
+
+.perk div {
+    vertical-align: middle;
+}
+
+.perk .info{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.player-name {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.card.bg-dark .player-name::after {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: white;
+    content: "";
+    left: 1px;
+    position: absolute;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+
+.sorting{
+    margin-bottom: .5rem;
+}
+
+.sorting .badge-pill {
+    font-size: 100%;
+    font-weight: 100;
+    /*background-color: gray;*/
+}
+
+.sorting .sort-item{
+    margin: 0 .4rem;
+}
+/*Профиль команды*/
 
 
 

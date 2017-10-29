@@ -19,4 +19,7 @@ $(document).ready(function () {
         navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right ml-3' aria-hidden='true'></i>"],
         autoWidth:true
     });
+
+    // Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
 });

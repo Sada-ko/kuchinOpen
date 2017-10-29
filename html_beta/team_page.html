@@ -11,7 +11,7 @@
     <!--Favicon-->
     <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico">
 
-    <title>Список игроков — Kuchin Open Tournament</title>
+    <title>Команда — Kuchin Open Tournament</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -221,26 +221,184 @@
     </div>
 </div>
 
+
 <div class="content-wrapper">
-    <!--=============   Игроки   =============-->
-    <div class="global_base players_global_list">
+
+    <!--=============   Страница команды   =============-->
+
+    <div class="global_base">
+
         <div class="container_wid m-0">
 
-            <h1>Игроки</h1>
+            <h1>Команда Кучина</h1>
 
-            <div class="row">
+            <div class="team-base row">
+                <div class="userpic-wrapper col-sm-7 col-md-8 col-xl-6">
+                    <!--Аватарка-->
+                    <div class="userpic mb-4">
+                        <img class="img-fluid" src="img/sport/zf6GjAFZAXU.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="col-sm-5 col-md-4 col-xl-6">
+
+                    <div class="statistics description">
+
+                        <!--<h2>Статистика</h2>-->
+
+                        <div class="desc-item">
+
+                            <div class="ask-item d-inline-block text-muted">
+                                Позиция в&nbsp;группе
+                            </div>
+
+                            <div class="answer-item d-inline-block">5</div>
+
+                        </div>
+
+                        <div class="desc-item">
+
+                            <div class="ask-item d-inline-block text-muted">
+                                Игры
+                            </div>
+
+                            <div class="answer-item d-inline-block">10</div>
+
+                        </div>
+
+                        <div class="desc-item">
+
+                            <div class="ask-item d-inline-block text-muted">
+                                Победы
+                            </div>
+
+                            <div class="answer-item d-inline-block">6</div>
+
+                        </div>
+
+                        <div class="desc-item">
+
+                            <div class="ask-item d-inline-block text-muted">
+                                Поражения
+                            </div>
+
+                            <div class="answer-item d-inline-block">4</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="team-description col-xl-10">
+                    <p>StarLine&nbsp;&mdash; это 15&nbsp;000&nbsp;000 автовладельцев уверенных в&nbsp;том,
+                        что они найдут свой автомобиль там, где его оставили.
+                        НПО СтарЛайн занимается разработкой и&nbsp;производством автомобильного
+                        охранного оборудования с&nbsp;1988&nbsp;года.
+                        Миссия компании&nbsp;&mdash; обеспечить жителей России и&nbsp;всего мира
+                        высоким уровнем безопасности на&nbsp;основе прогрессивных технологий
+                        мирового сообщества.</p>
+                    <p>Все охранно-телематическое оборудование StarLine разрабатывается и&nbsp;производится
+                        на&nbsp;территории России и&nbsp;предназначено для работы в&nbsp;широком
+                        диапазоне температур, в&nbsp;условиях экстремальных городских радиопомех.
+                        StarLine признан оригинальным аксессуаром мировыми автопроизводителями и&nbsp;рекомендован
+                        в&nbsp;качестве надежной защиты автомобиля ведущими федеральными страховыми
+                        компаниями. НПО СтарЛайн является лауреатом международных и&nbsp;российских
+                        премий: Народная Марка, EFFIE, Российский производитель, Сделано в&nbsp;России,
+                        Российская Виктория и&nbsp;др.</p>
+
+                </div>
+            </div>
+
+            <div class="schedule">
+
+                <h2>Расписание</h2>
+
+                <table class="table table-clean table-striped table-responsive">
+                    <thead class="">
+                    <tr class="small">
+                        <th></th>
+                        <th style="min-width: 100px">Дата</th>
+                        <th style="min-width: 100px">Время</th>
+                        <th>Матч</th>
+                        <th>Счёт</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Дивизион А, Тур 1</th>
+                        <td>1 января 2017</td>
+                        <td>15:00</td>
+                        <td><a href="#">ANIMALS</a> — <a href="#">Baltic Star V</a></td>
+                        <td><span>3/3</span></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Дивизион А, Тур 1</th>
+                        <td>21 января 2017</td>
+                        <td>15:00</td>
+                        <td><a href="#">ANIMALS</a> — <a href="#">Baltic Star V</a></td>
+                        <td><span class="text-success">8/3</span></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Дивизион А, Тур 2</th>
+                        <td>30 марта 2017</td>
+                        <td>15:00</td>
+                        <td><a href="#">ANIMALS</a> — <a href="#">Fishburg</a></td>
+                        <td><span class="text-danger">3/10</span></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <h2>Состав</h2>
+
+            <div class="team-base row players_global_list">
 
                 <div class="player_item col-sm-6 col-md-4 col-lg-4 col-xl-3">
                     <div class="card bg-dark inverted">
 
                         <img class="card-img fill-box" src="img/portrait68.jpg"
                              alt="Card image">
+
                         <div class="all_sports_gradient image_toning w-100 h-100"></div>
-                        <div href="#" class="card-wrapper d-block">
+
+                        <a href="player_page.html" class="card-wrapper d-block">
                             <div class="card-body">
                                 <div class="age small text-muted">33 года</div>
                                 <div class="player-name h4 card-title">Какая-то Баба</div>
 
+                                <div class="card-subtitle small perks">
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Игр</div>
+                                        <div class="info d-inline-block">8</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Очков</div>
+                                        <div class="info d-inline-block">24</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Атака</div>
+                                        <div class="info d-inline-block">15</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Подача</div>
+                                        <div class="info d-inline-block">12</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Блок</div>
+                                        <div class="info d-inline-block">9</div>
+                                    </div>
+
+                                </div>
 
                                 <div class="card-subtitle small">
 
@@ -276,7 +434,7 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -286,15 +444,45 @@
                         <img class="card-img fill-box" src="img/kuchin.jpg"
                              alt="Card image">
                         <div class="all_sports_gradient image_toning w-100 h-100"></div>
+
                         <a href="player_page.html" class="card-wrapper">
                             <div class="card-body">
                                 <div class="age small text-muted">78 лет</div>
                                 <div class="player-name h4 card-title">Михаил Кучин</div>
 
+                                <div class="card-subtitle small perks">
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Игр</div>
+                                        <div class="info d-inline-block">3</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Очков</div>
+                                        <div class="info d-inline-block">14</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Атака</div>
+                                        <div class="info d-inline-block">7</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Подача</div>
+                                        <div class="info d-inline-block">4</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Блок</div>
+                                        <div class="info d-inline-block">3</div>
+                                    </div>
+
+                                </div>
+
                                 <div class="card-subtitle small">
 
                                     <div class="sport-status d-inline"
-                                              data-toggle="tooltip" title="Волейбол">
+                                         data-toggle="tooltip" title="Волейбол">
                                         <span class="sports-font d-inline volleyball"></span>
                                         <div class="league d-inline">
                                             супер
@@ -326,6 +514,34 @@
                                 <div class="age small text-muted">33 года</div>
                                 <div class="player-name h4 card-title">Павел Кузнецов</div>
 
+                                <div class="card-subtitle small perks">
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Игр</div>
+                                        <div class="info d-inline-block">4</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Очков</div>
+                                        <div class="info d-inline-block">12</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Атака</div>
+                                        <div class="info d-inline-block">3</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Подача</div>
+                                        <div class="info d-inline-block">6</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Блок</div>
+                                        <div class="info d-inline-block">4</div>
+                                    </div>
+
+                                </div>
 
                                 <div class="card-subtitle small">
 
@@ -369,6 +585,35 @@
                                 <div class="age small text-muted">78 лет</div>
                                 <div class="player-name h4 card-title">Александра Бочар</div>
 
+                                <div class="card-subtitle small perks">
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Игр</div>
+                                        <div class="info d-inline-block">16</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Очков</div>
+                                        <div class="info d-inline-block">34</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Атака</div>
+                                        <div class="info d-inline-block">31</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Подача</div>
+                                        <div class="info d-inline-block">3</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Блок</div>
+                                        <div class="info d-inline-block">12</div>
+                                    </div>
+
+                                </div>
+
                                 <div class="card-subtitle small">
 
                                     <div class="sport-status d-inline"
@@ -404,6 +649,34 @@
                                 <div class="age small text-muted">33 года</div>
                                 <div class="player-name h4 card-title">Какая-то Баба</div>
 
+                                <div class="card-subtitle small perks">
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Игр</div>
+                                        <div class="info d-inline-block">12</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Очков</div>
+                                        <div class="info d-inline-block">16</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Атака</div>
+                                        <div class="info d-inline-block">6</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Подача</div>
+                                        <div class="info d-inline-block">14</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Блок</div>
+                                        <div class="info d-inline-block">3</div>
+                                    </div>
+
+                                </div>
 
                                 <div class="card-subtitle small">
 
@@ -454,6 +727,35 @@
                                 <div class="age small text-muted">78 лет</div>
                                 <div class="player-name h4 card-title">Михаил Кучин</div>
 
+                                <div class="card-subtitle small perks">
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Игр</div>
+                                        <div class="info d-inline-block">2</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Очков</div>
+                                        <div class="info d-inline-block">5</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Атака</div>
+                                        <div class="info d-inline-block">3</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Подача</div>
+                                        <div class="info d-inline-block">4</div>
+                                    </div>
+
+                                    <div class="perk d-inline-block">
+                                        <div class="label d-inline-block">Блок</div>
+                                        <div class="info d-inline-block">2</div>
+                                    </div>
+
+                                </div>
+
                                 <div class="card-subtitle small">
 
                                     <div class="sport-status d-inline"
@@ -477,6 +779,18 @@
                         </a>
                     </div>
                 </div>
+
+            </div>
+
+
+            <h2>Состав 2</h2>
+
+            <div class="sorting text-right small">Cортировать по <span
+                    class="badge badge-pill badge-light text-muted sort-item">имени</span> <a
+                    href="#" class="sort-item">количеству игр</a> <a href="#" class="sort-item">возрасту
+            </a><a class="sort-item" href="#">очкам</a> <a class="sort-item" href="#">атаке</a></div>
+
+            <div class="team-base row players_global_list">
 
                 <div class="player_item col-sm-6 col-md-4 col-lg-4 col-xl-3">
                     <div class="card">
@@ -962,6 +1276,109 @@
 
         </div>
     </div>
+
+    <!--Фотогалерея команды-->
+    <div class="event_short_gallery_wrapper">
+
+        <div class="event_short_gallery inverted owl-carousel">
+
+            <div class="gallery_item d-inline-block">
+                <img src="img/sport/1q0VO0stu-g.jpg" alt="">
+            </div>
+
+            <div class="gallery_item d-inline-block">
+                <img src="img/sport/7HU2Ua97itY.jpg" alt="">
+            </div>
+
+            <div class="gallery_item d-inline-block">
+                <img src="img/sport/cKRCS3HLS1M.jpg" alt="">
+            </div>
+
+            <div class="gallery_item d-inline-block">
+                <img src="img/sport/piS3qWntOJU.jpg" alt="">
+            </div>
+
+            <div class="gallery_item d-inline-block">
+                <img src="img/sport/yl8TiMspmJo.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="global_base">
+        <div class="container_wid m-0">
+
+            <h2>Результаты</h2>
+
+            <table class="table table-clean table-striped table-responsive mb-4">
+                <thead class="">
+                <tr class="small">
+                    <th>#</th>
+                    <th style="min-width: 100px">Хозяин</th>
+                    <th>Счёт</th>
+                    <th style="min-width: 100px">Гость</th>
+                    <th>Дата</th>
+                    <th>Стадия</th>
+                    <th>Соревнования</th>
+                    <th>Очки</th>
+                    <th>Партии</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#">ANIMALS</a></td>
+                    <td>Лига Медиум-Юг<br/>Группа 1</td>
+                    <td><a href="#">ANIMALS</a></td>
+                    <td>12 октября 2017</td>
+                    <td>1 круг</td>
+                    <td>2017/2018</td>
+                    <td>7</td>
+                    <td>3/3</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><a href="#">Baltic Star V</a></td>
+                    <td>Женская лига В<br/>В1</td>
+                    <td><a href="#">ANIMALS</a></a></td>
+                    <td>12 октября 2017</td>
+                    <td>1 круг</td>
+                    <td>2017/2018</td>
+                    <td>7</td>
+                    <td>3/3</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><a href="#">Fishburg</a></td>
+                    <td>Лига Медиум-Юг<br/>Группа 2</td>
+                    <td><a href="#">Baltic Star V</a></td>
+                    <td>12 октября 2017</td>
+                    <td>1 круг</td>
+                    <td>2017/2018</td>
+                    <td>7</td>
+                    <td>3/3</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td><a href="#">Baltic Star V</a></td>
+                    <td>Женская лига В<br/>В1</td>
+                    <td><a href="#">Fishburg</a></a></td>
+                    <td>12 октября 2017</td>
+                    <td>1 круг</td>
+                    <td>2017/2018</td>
+                    <td>7</td>
+                    <td>3/3</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <a class="btn btn-secondary my-3" href="teams_list.html" role="button">
+                <i class="fa fa-angle-left mr-2" aria-hidden="true"></i>К списку команд
+            </a>
+
+        </div>
+    </div>
+
 </div>
 
 <!--=============   Подвал   =============-->

@@ -9,22 +9,16 @@
         padding-right: 60px;
     }
 
-
     /*==============  Main Event  ==============*/
     .main_event .content {
         padding-top: 5rem;
         padding-right: 5rem;
     }
 
-
-
-
-
     /*slick*/
     .slick-next {
         right: 10px;
     }
-
 
     /*Список фото с события*/
     .event-media-list .photo {
@@ -35,20 +29,30 @@
         padding-top: 70px;
     }
 
-
     /*============  News  ============*/
     .main_news {
         /*padding-right: 400px;*/
     }
 
-
-    .footer_menu_item{
+    .footer_menu_item {
         font-size: 0.9em;
     }
 
 }
 
+/*------------------------       Small devices (landscape phones, less than 768px)    ------------------------*/
+@media (max-width: 767px) {
 
+    .service_block {
+        right: 1.5rem;
+    }
+
+    .global_events, .global_event, .global_base {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+}
 
 /*------------------------       Medium devices (tablets, less than 992px)    ------------------------*/
 @media (max-width: 991px) {
@@ -70,23 +74,18 @@
         padding-left: 80px;
     }
 
-
     /*Список фото с события*/
-    .event-photos-list .photo{
+    .event-photos-list .photo {
         height: 150px;
     }
 
     .event-photos-list .media-container .preview-icon {
         padding-top: 75px;
     }
+
     /*Список фото с события*/
 
-
-
 }
-
-
-
 
 /*-----------------------       Large devices (desktops, 992px and up)    -------------------------*/
 @media (min-width: 992px) {
@@ -96,25 +95,22 @@
         padding-right: 25%;
     }
 
-    h1{
+    h1 {
         font-size: 4rem;
         margin-left: -0.4rem;
     }
 
+    .search-form {
+        display: inline-block;
+    }
+
 }
-
-
-
 
 /*-----------------------     Extra large devices (large desktops, 1200px and up)    -------------------------*/
 @media (min-width: 1200px) {
 
-    .long-right-padding{
+    .long-right-padding {
         padding-right: 20% !important;
-    }
-
-    .search-form{
-        display: inline-block;
     }
 
     /*Список фото с события*/
@@ -127,7 +123,6 @@
     }
 
 }
-
 
 /*-----------------------     Extra large devices (large desktops, 1400px and up)    -------------------------*/
 @media (min-width: 1400px) {
@@ -142,7 +137,6 @@
     }
 
 }
-
 
 /*-------------------   Small devices (landscape phones, less than 768px)    --------------------*/
 
@@ -166,9 +160,8 @@
         padding-right: 0 !important;
     }
 
-
     .announse_wrapper {
-     font-size: 0.8em;
+        font-size: 0.8em;
     }
 
     .announse {
@@ -181,9 +174,6 @@
         padding-right: 0;
     }
 
-
-
-
     /*========== Logo ===========*/
     .logo {
         height: 58px;
@@ -192,24 +182,21 @@
         width: 120px;
     }
 
-
-
     /*========= Slick =========*/
     .slick-next {
         right: 0;
     }
 
-    .slick-prev{
+    .slick-prev {
         display: none !important;
     }
-
 
     /*======== Owl =========*/
     .owl-next {
         height: 30px;
     }
 
-    .owl-prev{
+    .owl-prev {
         display: none;
     }
 
@@ -217,10 +204,7 @@
         right: 0;
     }
 
-
-
     /*==============  Main Event  ==============*/
-
     .main_event .content {
         padding-top: 2rem;
     }
@@ -230,7 +214,7 @@
         line-height: 4rem;
     }
 
-    .main_event .match_result .count{
+    .main_event .match_result .count {
         font-size: 3.5em;
     }
 
@@ -238,31 +222,21 @@
         padding-left: 0;
     }
 
-
-
     /*============  News  ============*/
-    .news_container{
+    .news_container {
         /*padding-left: 0;*/
         padding-bottom: 3rem;
     }
 
-
     /*========= Лучшие игроки ========*/
-
-    .best-player_item span.sports-font{
+    .best-player_item span.sports-font {
         position: relative;
     }
 
-
     /*======= События =======*/
-
-    .event_short_gallery .gallery_item{
-        height:200px;
+    .event_short_gallery .gallery_item {
+        height: 200px;
     }
-
-
-
-
 
     /*================ footer ===============*/
     .footer .copyright {
@@ -271,7 +245,7 @@
         margin-bottom: 2rem;
     }
 
-    .footer_menu_item{
+    .footer_menu_item {
         margin-bottom: 2rem;
     }
 
@@ -281,9 +255,8 @@
         top: 30px;
     }
 
-
     /*Список фото с события*/
-    .event-photos-list .photo{
+    .event-photos-list .photo {
         height: 200px;
     }
 
@@ -291,7 +264,7 @@
         padding-top: 100px;
     }
 
-    .event-media-list .video{
+    .event-media-list .video {
         height: 300px;
     }
 
@@ -310,12 +283,28 @@
 
 }
 
+/*-----------------------     Extra large devices (large desktops, 1700px and up)    -------------------------*/
+@media (min-width: 1700px) {
 
+    .player_item{
+        max-width: 16.666667%;
+    }
 
-/*-----------------------       Large devices (desktops, 992px and up)    -------------------------*/
-@media (min-width: 2100px) {
+    .userpic-wrapper{
+        max-width: 800px;
+    }
 
-    .players_global_list .player_item{
+    .team-description{
+        max-width: 1400px;
+        line-height: 2rem;
+    }
+
+}
+
+/*-----------------------       Large devices (desktops, 2500px and up)    -------------------------*/
+@media (min-width: 3000px) {
+
+    .players_global_list .player_item {
         max-width: 8.333333%;
     }
 
