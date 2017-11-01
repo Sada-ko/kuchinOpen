@@ -283,6 +283,11 @@ a:hover, .link:hover, a:hover .link{
     background-color: rgba(158, 166, 168, .2);
 }
 
+.badge-full-size{
+    font-size: 100%;
+    padding: .16rem .6rem .3rem .6rem;
+}
+
 .dummy{
     background-color: gray;
 }
@@ -702,6 +707,7 @@ table{
 
 .event_short_gallery_wrapper{
     position: relative;
+    /*margin-bottom: 1rem;*/
 }
 
 .details{
@@ -748,26 +754,31 @@ table{
 }
 
 .event-list-year .card,
+.teams_global_list .card,
 .players_global_list .card{
     margin-bottom: 1rem;
     transition: .2s;
 }
 
 .event-list-year h2,
+.teams_global_list h2,
 .players_global_list h2{
     margin-bottom: 1.5rem;
 }
 
 .event-list-year .card:hover,
+.teams_global_list .card:hover,
 .players_global_list .card:hover{
     box-shadow: 0 1px 15px rgba(100, 100, 100, 0.2);
 }
 
+.teams_global_list .card.bg-dark a:hover,
 .players_global_list .card.bg-dark a:hover{
     color: white;
 }
 
 .event-list-year .card .card-wrapper,
+.teams_global_list .card .card-wrapper,
 .players_global_list .card .card-wrapper{
     border: none;
     z-index: 2;
@@ -796,11 +807,13 @@ table{
 }
 
 .event-list-year.photo-gallery .card,
+.teams_global_list.photo-gallery .card,
 .players_global_list .card{
     padding-bottom: .5rem;
 }
 
 .event-list-year.photo-gallery .card.bg-dark,
+.teams_global_list.photo-gallery .card.bg-dark,
 .players_global_list .card.bg-dark{
     border-width: 0;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
@@ -899,21 +912,26 @@ table{
 
 
 /*Список игроков*/
-.players_global_list .card .image_toning{
+.players_global_list .card .image_toning,
+.teams_global_list .card .image_toning{
     border-radius: 0.25rem;
     opacity: .5;
 }
 
+.teams_global_list .image_toning::after,
 .players_global_list .image_toning::after{
     border-radius: 0.25rem;
     opacity: .7;
 }
 
+.teams_global_list .card-body,
+.teams_global_list .list-group-item,
 .players_global_list .card-body,
 .players_global_list .list-group-item{
     padding: 1rem 1rem .7rem 1.7rem;
 }
 
+.teams_global_list .bg-dark .card-body,
 .players_global_list .bg-dark .card-body {
     padding: 1.25rem 1rem .7rem 2rem;
 }
@@ -931,14 +949,17 @@ table{
     white-space: nowrap;
 }
 
+.teams_global_list .card,
 .players_global_list .card {
     min-height: 160px;
 }
 
+.teams_global_list .player_item .bg-dark .h4,
 .players_global_list .player_item .bg-dark .h4 {
     margin-bottom: 1.25rem;
 }
 
+.teams_global_list .player_item .h4,
 .players_global_list .player_item .h4 {
     line-height: 1.4;
 }
@@ -947,6 +968,9 @@ table{
     background-color: transparent;
 }
 /*Список игроков*/
+
+
+/*Список команд*/
 
 
 
@@ -1077,6 +1101,7 @@ table{
 
 
 /*Профиль команды*/
+.teams_global_list .card .userpic,
 .players_global_list .card .userpic{
     height: 200px;
     /*padding: 1.25rem 1rem 1.25rem 2rem;*/
@@ -1145,11 +1170,13 @@ table{
     margin-top: 2px;
 }
 
+.team-name,
 .player-name {
     position: relative;
     margin-bottom: 0;
 }
 
+.card.bg-dark .team-name::after,
 .card.bg-dark .player-name::after {
     display: block;
     width: 40px;
@@ -1166,9 +1193,7 @@ table{
 }
 
 .sorting .badge-pill {
-    font-size: 100%;
     font-weight: 100;
-    /*background-color: gray;*/
 }
 
 .sorting .sort-item{
