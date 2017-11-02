@@ -195,9 +195,14 @@ a:hover, .link:hover, a:hover .link{
 }
 
 .search-form{
-    width: 200px;
+    width: 180px;
     display: none;
     vertical-align: top;
+    margin-right: 1.5rem;
+}
+
+.search-form input{
+    width: 100% !important;
 }
 
 .container_mid{
@@ -232,6 +237,7 @@ a:hover, .link:hover, a:hover .link{
 .inverted .text-muted {
     /*color: rgba(255, 255, 255, .5);*/
     color: rgba(255, 255, 255, 1) !important;
+    opacity: .7;
 }
 
 .all_sports_gradient{
@@ -807,13 +813,13 @@ table{
 }
 
 .event-list-year.photo-gallery .card,
-.teams_global_list.photo-gallery .card,
+.teams_global_list .card,
 .players_global_list .card{
     padding-bottom: .5rem;
 }
 
 .event-list-year.photo-gallery .card.bg-dark,
-.teams_global_list.photo-gallery .card.bg-dark,
+.teams_global_list .card.bg-dark,
 .players_global_list .card.bg-dark{
     border-width: 0;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
@@ -889,6 +895,7 @@ table{
 
 .description{
     /*padding-left: 1rem;*/
+    max-width: 320px;
 }
 
 .description div{
@@ -897,12 +904,15 @@ table{
 
 .description .desc-item{
     margin-bottom: .7rem;
-    line-height: 1.5rem;
 }
 
 .description .ask-item{
-    width: 100px;
+    /*width: 100px;*/
     margin-right: 1rem;
+}
+
+.description .answer-item{
+    text-align: right;
 }
 
 /*Профиль игрока*/
@@ -954,18 +964,27 @@ table{
     min-height: 160px;
 }
 
-.teams_global_list .player_item .bg-dark .h4,
+.teams_global_list .team_item .bg-dark .h4,
 .players_global_list .player_item .bg-dark .h4 {
     margin-bottom: 1.25rem;
 }
 
-.teams_global_list .player_item .h4,
+.teams_global_list .team_item .h4,
 .players_global_list .player_item .h4 {
     line-height: 1.4;
 }
 
+.team_item .card-footer,
 .player_item .card-footer {
     background-color: transparent;
+}
+
+.team_item:hover .image_toning,
+.team_item:hover .image_toning::after,
+.player_item:hover .image_toning,
+.player_item:hover .image_toning::after{
+    opacity: .7;
+    transition: .2s;
 }
 /*Список игроков*/
 
@@ -1108,18 +1127,22 @@ table{
     border-radius: .25rem .25rem 0 0;
 }
 
+.statistics .ask-item {
+    /*font-size: .9rem;*/
+    /*width: 100px;*/
+    margin: 0;
+    vertical-align: top;
+    line-height: 1.2rem;
+}
+
 .statistics .answer-item {
     font-size: 2rem;
     font-weight: 600;
     height: 45px;
     text-align: right;
     width: 60px;
-}
-
-.statistics .ask-item {
-    font-size: .9rem;
-    width: 100px;
-    margin: 0;
+    vertical-align: top;
+    line-height: 1.6rem;
 }
 
 .statistics .desc-item{
@@ -1132,6 +1155,7 @@ table{
 
 .statistics{
     margin-bottom: 3rem;
+    max-width: 220px;
 }
 
 .team-base{
@@ -1146,6 +1170,7 @@ table{
     text-align: center;
 }
 
+.team_item .bg-dark .perks,
 .player_item .bg-dark .perks {
     margin-bottom: 1.3rem;
     padding-top: .5rem;

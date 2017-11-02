@@ -299,6 +299,10 @@
         line-height: 2rem;
     }
 
+    p {
+        margin-bottom: 1rem;
+    }
+
 }
 
 /*-----------------------       Large devices (desktops, 2500px and up)    -------------------------*/
