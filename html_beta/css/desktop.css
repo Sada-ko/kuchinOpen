@@ -1255,10 +1255,15 @@ table{
 
 .footer_menu_item .head {
     font-size: 22px;
+    margin-bottom: .4rem;
 }
 
 .footer_menu_item {
     /*margin-right: 40px;*/
-    line-height: 1.8em;
+    line-height: 1.4em;
+}
+
+.footer_menu_item li{
+    margin-bottom: .4rem;
 }
 
